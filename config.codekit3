@@ -19,6 +19,60 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/header/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/header/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/leopard-main-background.png": {
+		"ft": 32768,
+		"iS": 469369,
+		"oA": 0,
+		"oAP": "/deploy/img/home/leopard-main-background.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home/leopard.png": {
+		"ft": 32768,
+		"iS": 224012,
+		"oA": 0,
+		"oAP": "/deploy/img/home/leopard.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home/rhino-background.jpg": {
+		"ft": 16384,
+		"iS": 249056,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/rhino-background.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/home/rhino.png": {
+		"ft": 32768,
+		"iS": 265443,
+		"oA": 0,
+		"oAP": "/deploy/img/home/rhino.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,

@@ -343,10 +343,13 @@ a:visited {
     grid-area: container; }
 
 .content-spacing {
-  margin-top: 40px; }
+  margin-bottom: 40px; }
   @media (min-width: 768px) {
     .content-spacing {
-      margin-top: 60px; } }
+      margin-bottom: 50px; } }
+  @media (min-width: 768px) {
+    .content-spacing {
+      margin-bottom: 60px; } }
 /* =============
     Typography
 ============= */
@@ -505,3 +508,61 @@ footer {
         margin: 30%; }
   #index-hero div img {
     margin: 0 30% 0 0; }
+
+/* =============
+    Index-Intro
+============= */
+#index-intro {
+  background-color: #141A02; }
+  #index-intro div {
+    display: grid;
+    grid-template-areas: "text question"; }
+    #index-intro div #index-intro-text {
+      grid-area: text;
+      padding: 10%; }
+      @media (min-width: 768px) {
+        #index-intro div #index-intro-text {
+          padding: 5% 10% 5% 5%; } }
+      #index-intro div #index-intro-text h2 {
+        color: #E18A37;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1.375rem;
+        padding-bottom: 10px; }
+        @media (min-width: 768px) {
+          #index-intro div #index-intro-text h2 {
+            font-size: 1.75rem; } }
+        @media (min-width: 1025px) {
+          #index-intro div #index-intro-text h2 {
+            font-size: 2.25rem; } }
+        @media (min-width: 1440px) {
+          #index-intro div #index-intro-text h2 {
+            font-size: 2.5rem; } }
+      #index-intro div #index-intro-text p {
+        color: #FFFADF;
+        font-family: 'Milu', sans-serif;
+        font-size: 1rem;
+        padding-bottom: 10px; }
+        @media (min-width: 768px) {
+          #index-intro div #index-intro-text p {
+            font-size: 1.125rem; } }
+        @media (min-width: 1025px) {
+          #index-intro div #index-intro-text p {
+            font-size: 1.25rem; } }
+        @media (min-width: 1440px) {
+          #index-intro div #index-intro-text p {
+            font-size: 1.375rem; } }
+    #index-intro div #question-mark {
+      grid-area: question; }
+      #index-intro div #question-mark span {
+        color: rgba(210, 175, 54, 0.75);
+        font-family: 'Changa One', cursive;
+        font-size: 5rem; }
+        @media (min-width: 768px) {
+          #index-intro div #question-mark span {
+            font-size: 6.25rem; } }
+        @media (min-width: 1025px) {
+          #index-intro div #question-mark span {
+            font-size: 9.375rem; } }
+        @media (min-width: 1440px) {
+          #index-intro div #question-mark span {
+            font-size: 12.5rem; } }

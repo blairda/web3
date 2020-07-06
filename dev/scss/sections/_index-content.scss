@@ -42,3 +42,84 @@
         }
     }
 }
+
+/* =============
+    Index-Intro
+============= */
+#index-intro {
+    background-color: $green;
+
+    div {
+        display: grid;
+        grid-template-areas: "text question";
+
+        #index-intro-text {
+            grid-area: text;
+            padding: 10%;
+
+            @include md {
+                padding: 5% 10% 5% 5%;
+            }
+
+            h2 {
+                color: $orange;
+                font-family: 'Catamaran', sans-serif;
+                font-size: rem-calc(22);
+                padding-bottom: 10px;
+
+                @include md {
+                    font-size: rem-calc(28);
+                }
+
+                @include lg {
+                    font-size: rem-calc(36);
+                }
+
+                @include xl {
+                    font-size: rem-calc(40);
+                }
+            }
+
+            p {
+                color: $beige;
+                font-family: 'Milu', sans-serif;
+                font-size: rem-calc(16);
+                padding-bottom: 10px;
+
+                @include md {
+                    font-size: rem-calc(18);
+                }
+
+                @include lg {
+                    font-size: rem-calc(20);
+                }
+
+                @include xl {
+                    font-size: rem-calc(22);
+                }
+            }
+        }
+
+        #question-mark {
+            grid-area: question;
+
+            span {
+                color: rgba($color: $yellow, $alpha: 0.75);
+                font-family: 'Changa One', cursive;
+                font-size: rem-calc(80);
+
+                @include md {
+                    font-size: rem-calc(100);
+                }
+
+                @include lg {
+                    font-size: rem-calc(150);
+                }
+
+                @include xl {
+                    font-size: rem-calc(200);
+                }
+            }
+        }
+    }
+}

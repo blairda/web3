@@ -36,9 +36,13 @@ a:visited {
 }
 
 .content-spacing {
-    margin-top: 40px;
+    margin-bottom: 40px;
 
     @include md {
-        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    @include md {
+        margin-bottom: 60px;
     }
 }

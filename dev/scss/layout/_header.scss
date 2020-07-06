@@ -1,31 +1,31 @@
 /* =============
     Header
 ============= */
-header{
+header {
     background-color: $brown;
 
-    div{
+    div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
-
-        #logo-container{
+        #logo-container {
             padding: 12px 0;
-            img{
+
+            img {
                 width: 45px;
 
-                @include md{
+                @include md {
                     width: initial;
                 }
             }
         }
     }
 
-    #burger-container{
-        font-size: rem-calc(32);
+    #burger-container {
+        align-items: center;
         color: $yellow;
         display: flex;
+        font-size: rem-calc(32);
         justify-content: flex-end;
-        align-items: center;
     }
 }

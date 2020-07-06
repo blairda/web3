@@ -19,6 +19,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/footer/footer.png": {
+		"ft": 32768,
+		"iS": 164840,
+		"oA": 0,
+		"oAP": "/deploy/img/footer/footer.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/header/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -91,6 +102,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/global/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/footer.html",
+		"oF": 0
 		},
 	"/dev/global/head.kit": {
 		"cB": 0,

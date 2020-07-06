@@ -1,3 +1,97 @@
 /* =============
     Footer
 ============= */
+footer {
+    background-image: url("../img/footer/footer.png");
+    background-position: center;
+    background-size: cover;
+
+    >div {
+        text-align: center;
+
+        img {
+            padding-top: 10px;
+            width: 30px;
+
+            @include md {
+                padding-top: 20px;
+                width: 40px;
+            }
+
+            @include lg {
+                padding-top: 30px;
+                width: 50px;
+            }
+
+            @include xl {
+                padding-top: 40px;
+                width: initial;
+            }
+        }
+
+        h1 {
+            color: $brown;
+            font-family: 'Changa One', cursive;
+            font-size: rem-calc(20);
+            padding-top: 5px;
+
+            @include md {
+                font-size: rem-calc(32);
+                padding-top: 10px;
+            }
+
+            @include lg {
+                font-size: rem-calc(36);
+                padding-top: 15px;
+            }
+
+            @include xl {
+                font-size: rem-calc(40);
+                padding-top: 20px;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 100px 0;
+
+            @include md {
+                padding: 15px 0 150px 0;
+            }
+
+            @include lg {
+                padding: 15px 0 200px 0;
+            }
+
+            @include xl {
+                padding: 15px 0 350px 0;
+            }
+
+            li {
+                margin: 0 10px;
+
+                a:link,
+                a:visited {
+                    color: $green;
+                    font-size: rem-calc(16);
+
+                    &:hover,
+                    &:active {
+                        color: $white;
+                    }
+
+                    @include md {
+                        font-size: rem-calc(24);
+                        margin: 0 15px;
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(32);
+                        margin: 0 25px;
+                    }
+                }
+            }
+        }
+    }
+}

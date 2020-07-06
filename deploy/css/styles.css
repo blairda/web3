@@ -318,29 +318,35 @@ template {
     Base
 ============= */
 figure {
-  padding: 0;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 ul {
-  padding: 0;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
   ul li {
     list-style: none; }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   transition: 0.25s; }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". container ."; }
+  grid-template-areas: ". container .";
+  grid-template-columns: 15px auto 15px; }
   @media (min-width: 1440px) {
     .grid-container {
       grid-template-columns: auto 1440px auto; } }
   .grid-container > div {
     grid-area: container; }
 
+.content-spacing {
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    .content-spacing {
+      margin-top: 60px; } }
 /* =============
     Typography
 ============= */
@@ -469,3 +475,33 @@ footer {
             footer > div ul li a:visited {
               font-size: 2rem;
               margin: 0 25px; } }
+/* =============
+    Index-Content
+============= */
+#index-hero {
+  background-image: url("../img/index/leopard-main-background.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: initial; }
+  #index-hero div article {
+    margin: 10%;
+    position: absolute; }
+    #index-hero div article h1 {
+      color: #E18A37;
+      font-family: 'Changa One', cursive;
+      font-size: 2rem;
+      padding-bottom: 10px; }
+      @media (min-width: 768px) {
+        #index-hero div article h1 {
+          font-size: 3rem; } }
+      @media (min-width: 1025px) {
+        #index-hero div article h1 {
+          font-size: 3.75rem; } }
+      @media (min-width: 1440px) {
+        #index-hero div article h1 {
+          font-size: 4.5rem; } }
+      #index-hero div article h1 h1:last-of-type {
+        margin: 30%; }
+  #index-hero div img {
+    margin: 0 30% 0 0; }

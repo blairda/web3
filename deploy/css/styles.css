@@ -558,6 +558,9 @@ footer {
     margin-left: 2%;
     margin-top: 10%;
     position: absolute; }
+    @media (min-width: 768px) {
+      #index-hero div section {
+        margin-left: 5%; } }
     @media (min-width: 1025px) {
       #index-hero div section {
         margin-left: 15%;
@@ -585,14 +588,27 @@ footer {
   background-color: #141A02; }
   #index-intro div {
     display: grid;
-    grid-template-columns: 80% auto;
-    grid-template-areas: "text question"; }
+    grid-template-areas: "question text";
+    grid-template-columns: auto 85%; }
+    @media (min-width: 768px) {
+      #index-intro div {
+        grid-template-areas: "text question";
+        grid-template-columns: 80% auto; } }
     #index-intro div #index-intro-text {
       grid-area: text;
-      padding: 5% 0% 5% 5%; }
+      padding: 5% 0%; }
+      @media (min-width: 768px) {
+        #index-intro div #index-intro-text {
+          padding-left: 5%; } }
     #index-intro div #question-mark {
-      grid-area: question; }
+      align-items: top;
+      display: flex;
+      grid-area: question;
+      justify-content: center; }
       @media (min-width: 768px) {
         #index-intro div #question-mark {
           display: grid;
           place-items: center; } }
+/* =============
+    Index-Card1
+============= */

@@ -22,6 +22,10 @@
             margin-top: 10%;
             position: absolute;
 
+            @include md {
+                margin-left: 5%;
+            }
+
             @include lg {
                 margin-left: 15%;
                 margin-top: 15%;
@@ -62,21 +66,37 @@
 
     div {
         display: grid;
-        grid-template-columns: 80% auto;
-        grid-template-areas: "text question";
+        grid-template-areas: "question text";
+        grid-template-columns: auto 85%;
+
+        @include md {
+            grid-template-areas: "text question";
+            grid-template-columns: 80% auto;
+        }
 
         #index-intro-text {
             grid-area: text;
-            padding: 5% 0% 5% 5%;
+            padding: 5% 0%;
+
+            @include md{
+                padding-left: 5%;
+            }
         }
 
         #question-mark {
+            align-items: top;
+            display: flex;
             grid-area: question;
+            justify-content: center;
 
-            @include md{
+            @include md {
                 display: grid;
                 place-items: center;
             }
         }
     }
 }
+
+/* =============
+    Index-Card1
+============= */

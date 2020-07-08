@@ -143,6 +143,11 @@
                 @include lg {
                     padding-left: 70%;
                 }
+
+                span{
+                    font-style: italic;
+                    font-weight: 800;
+                }
             }
         }
     }

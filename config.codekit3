@@ -19,6 +19,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/gallery.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/gallery.html",
+		"oF": 0
+		},
 	"/deploy/img/footer/footer.png": {
 		"ft": 32768,
 		"iS": 164840,
@@ -40,11 +48,11 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/deploy/img/index/leopard-main-background.png": {
+	"/deploy/img/index/hippo.png": {
 		"ft": 32768,
-		"iS": 469369,
+		"iS": 574675,
 		"oA": 0,
-		"oAP": "/deploy/img/index/leopard-main-background.png",
+		"oAP": "/deploy/img/index/hippo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -62,15 +70,15 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/index/rhino-background.jpg": {
-		"ft": 16384,
-		"iS": 249056,
-		"jF": 0,
+	"/deploy/img/index/leopard2.png": {
+		"ft": 32768,
+		"iS": 609440,
 		"oA": 0,
-		"oAP": "/deploy/img/index/rhino-background.jpg",
+		"oAP": "/deploy/img/index/leopard2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/index/rhino.png": {
@@ -103,6 +111,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/content/gallery-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/gallery-content.html",
+		"oF": 0
+		},
 	"/dev/content/index-content.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -110,6 +126,14 @@
 		"oA": 1,
 		"oAP": "/dev/content/index-content.html",
 		"oF": 0
+		},
+	"/dev/gallery.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/gallery.html",
+		"oF": 2
 		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
@@ -318,13 +342,21 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/template.kit": {
+	"/dev/template.html": {
 		"cB": 0,
-		"ft": 2048,
+		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/dev/template.html",
 		"oF": 0
+		},
+	"/dev/template.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/template.html",
+		"oF": 2
 		},
 	"/README.md": {
 		"cB": 0,

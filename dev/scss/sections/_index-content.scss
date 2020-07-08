@@ -2,43 +2,54 @@
     Index-Content
 ============= */
 #index-hero {
-    background-image: url("../img/index/leopard-main-background.png");
+    background-image: url("../img/index/leopard-main.png");
     background-position: center;
     background-size: cover;
+    height: 60vh;
     position: relative;
-    width: initial;
+
+    @include md {
+        height: 70vh;
+    }
+
+    @include lg {
+        height: 90vh;
+    }
 
     div {
-        article {
-            margin: 10%;
+        section {
+            margin-left: 2%;
+            margin-top: 10%;
             position: absolute;
 
-            h1 {
-                color: $orange;
-                font-family: 'Changa One', cursive;
-                font-size: rem-calc(32);
-                padding-bottom: 10px;
+            @include lg {
+                margin-left: 15%;
+                margin-top: 15%;
+            }
+
+            @include xl {
+                margin-top: 10%;
+            }
+
+            h1:nth-child(2) {
+                margin-left: 10%;
+
+                @include lg {
+                    margin-left: 20%;
+                }
+            }
+
+            h1:nth-child(3) {
+                margin-left: 15%;
 
                 @include md {
-                    font-size: rem-calc(48);
+                    margin-left: 20%;
                 }
 
                 @include lg {
-                    font-size: rem-calc(60);
-                }
-
-                @include xl {
-                    font-size: rem-calc(72);
-                }
-
-                h1:last-of-type {
-                    margin: 30%;
+                    margin-left: 30%;
                 }
             }
-        }
-
-        img {
-            margin: 0 30% 0 0;
         }
     }
 }
@@ -51,74 +62,20 @@
 
     div {
         display: grid;
+        grid-template-columns: 80% auto;
         grid-template-areas: "text question";
 
         #index-intro-text {
             grid-area: text;
-            padding: 10%;
-
-            @include md {
-                padding: 5% 10% 5% 5%;
-            }
-
-            h2 {
-                color: $orange;
-                font-family: 'Catamaran', sans-serif;
-                font-size: rem-calc(22);
-                padding-bottom: 10px;
-
-                @include md {
-                    font-size: rem-calc(28);
-                }
-
-                @include lg {
-                    font-size: rem-calc(36);
-                }
-
-                @include xl {
-                    font-size: rem-calc(40);
-                }
-            }
-
-            p {
-                color: $beige;
-                font-family: 'Milu', sans-serif;
-                font-size: rem-calc(16);
-                padding-bottom: 10px;
-
-                @include md {
-                    font-size: rem-calc(18);
-                }
-
-                @include lg {
-                    font-size: rem-calc(20);
-                }
-
-                @include xl {
-                    font-size: rem-calc(22);
-                }
-            }
+            padding: 5% 0% 5% 5%;
         }
 
         #question-mark {
             grid-area: question;
 
-            span {
-                color: rgba($color: $yellow, $alpha: 0.75);
-                font-family: 'Changa One', cursive;
-                font-size: rem-calc(80);
-
-                @include md {
-                    font-size: rem-calc(100);
-                }
-
-                @include lg {
-                    font-size: rem-calc(150);
-                }
-
-                @include xl {
-                    font-size: rem-calc(200);
-                }
+            @include md{
+                display: grid;
+                place-items: center;
             }
         }
     }

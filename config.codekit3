@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "FC2C70BD-2300-45FF-9D89-3482FFB74997"
+		"uuidString": "4A1C647F-2225-4722-9609-44A89E293538"
 		}
 	],
 "creatorBuild": "32001",
@@ -61,7 +61,7 @@
 		},
 	"/deploy/img/index/leopard-main.png": {
 		"ft": 32768,
-		"iS": 224012,
+		"iS": 667266,
 		"oA": 0,
 		"oAP": "/deploy/img/index/leopard-main.png",
 		"oF": 0,
@@ -83,7 +83,7 @@
 		},
 	"/deploy/img/index/rhino.png": {
 		"ft": 32768,
-		"iS": 265443,
+		"iS": 1032707,
 		"oA": 0,
 		"oAP": "/deploy/img/index/rhino.png",
 		"oF": 0,
@@ -351,12 +351,12 @@
 		"oF": 0
 		},
 	"/dev/template.kit": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/dev/template.html",
-		"oF": 2
+		"oF": 0
 		},
 	"/README.md": {
 		"cB": 0,
@@ -383,9 +383,9 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 615702450.23455596,
+	"creationDate": 615877980.23471701,
 	"displayValue": "web3",
-	"displayValueWasSetByUser": 1,
+	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_orange",
 	"iconImageWasSetByUser": 1
 	},

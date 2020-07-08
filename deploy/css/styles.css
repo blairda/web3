@@ -361,6 +361,67 @@ p {
   margin: 0;
   padding: 0; }
 
+.title h1 {
+  color: #E18A37;
+  font-family: 'Changa One', cursive;
+  font-size: 2.25rem; }
+  @media (min-width: 768px) {
+    .title h1 {
+      font-size: 3.75rem; } }
+  @media (min-width: 1025px) {
+    .title h1 {
+      font-size: 4.5rem; } }
+  @media (min-width: 1440px) {
+    .title h1 {
+      font-size: 5rem; } }
+.subtitle h2 {
+  color: #E18A37;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.75rem; }
+  @media (min-width: 768px) {
+    .subtitle h2 {
+      font-size: 1.75rem;
+      line-height: 2.5rem; } }
+  @media (min-width: 1025px) {
+    .subtitle h2 {
+      font-size: 2.25rem;
+      line-height: 3.75rem; } }
+  @media (min-width: 1440px) {
+    .subtitle h2 {
+      font-size: 2.5rem; } }
+.opening p {
+  color: #FFFADF;
+  font-family: 'Milu', sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem; }
+  @media (min-width: 768px) {
+    .opening p {
+      font-size: 1.125rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 1025px) {
+    .opening p {
+      font-size: 1.25rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 1440px) {
+    .opening p {
+      font-size: 1.375rem; } }
+.opening p:first-child {
+  padding-bottom: 10px; }
+
+.punctuation span {
+  color: rgba(210, 175, 54, 0.75);
+  font-family: 'Changa One', cursive;
+  font-size: 5rem; }
+  @media (min-width: 768px) {
+    .punctuation span {
+      font-size: 9.375rem; } }
+  @media (min-width: 1025px) {
+    .punctuation span {
+      font-size: 12.5rem; } }
+  @media (min-width: 1440px) {
+    .punctuation span {
+      font-size: 15.625rem; } }
 /* =============
     Buttons
 ============= */
@@ -482,33 +543,41 @@ footer {
     Index-Content
 ============= */
 #index-hero {
-  background-image: url("../img/index/leopard-main-background.png");
+  background-image: url("../img/index/leopard-main.png");
   background-position: center;
   background-size: cover;
-  position: relative;
-  width: initial; }
-  #index-hero div article {
-    margin: 10%;
+  height: 60vh;
+  position: relative; }
+  @media (min-width: 768px) {
+    #index-hero {
+      height: 70vh; } }
+  @media (min-width: 1025px) {
+    #index-hero {
+      height: 90vh; } }
+  #index-hero div section {
+    margin-left: 2%;
+    margin-top: 10%;
     position: absolute; }
-    #index-hero div article h1 {
-      color: #E18A37;
-      font-family: 'Changa One', cursive;
-      font-size: 2rem;
-      padding-bottom: 10px; }
-      @media (min-width: 768px) {
-        #index-hero div article h1 {
-          font-size: 3rem; } }
+    @media (min-width: 1025px) {
+      #index-hero div section {
+        margin-left: 15%;
+        margin-top: 15%; } }
+    @media (min-width: 1440px) {
+      #index-hero div section {
+        margin-top: 10%; } }
+    #index-hero div section h1:nth-child(2) {
+      margin-left: 10%; }
       @media (min-width: 1025px) {
-        #index-hero div article h1 {
-          font-size: 3.75rem; } }
-      @media (min-width: 1440px) {
-        #index-hero div article h1 {
-          font-size: 4.5rem; } }
-      #index-hero div article h1 h1:last-of-type {
-        margin: 30%; }
-  #index-hero div img {
-    margin: 0 30% 0 0; }
-
+        #index-hero div section h1:nth-child(2) {
+          margin-left: 20%; } }
+    #index-hero div section h1:nth-child(3) {
+      margin-left: 15%; }
+      @media (min-width: 768px) {
+        #index-hero div section h1:nth-child(3) {
+          margin-left: 20%; } }
+      @media (min-width: 1025px) {
+        #index-hero div section h1:nth-child(3) {
+          margin-left: 30%; } }
 /* =============
     Index-Intro
 ============= */
@@ -516,53 +585,14 @@ footer {
   background-color: #141A02; }
   #index-intro div {
     display: grid;
+    grid-template-columns: 80% auto;
     grid-template-areas: "text question"; }
     #index-intro div #index-intro-text {
       grid-area: text;
-      padding: 10%; }
-      @media (min-width: 768px) {
-        #index-intro div #index-intro-text {
-          padding: 5% 10% 5% 5%; } }
-      #index-intro div #index-intro-text h2 {
-        color: #E18A37;
-        font-family: 'Catamaran', sans-serif;
-        font-size: 1.375rem;
-        padding-bottom: 10px; }
-        @media (min-width: 768px) {
-          #index-intro div #index-intro-text h2 {
-            font-size: 1.75rem; } }
-        @media (min-width: 1025px) {
-          #index-intro div #index-intro-text h2 {
-            font-size: 2.25rem; } }
-        @media (min-width: 1440px) {
-          #index-intro div #index-intro-text h2 {
-            font-size: 2.5rem; } }
-      #index-intro div #index-intro-text p {
-        color: #FFFADF;
-        font-family: 'Milu', sans-serif;
-        font-size: 1rem;
-        padding-bottom: 10px; }
-        @media (min-width: 768px) {
-          #index-intro div #index-intro-text p {
-            font-size: 1.125rem; } }
-        @media (min-width: 1025px) {
-          #index-intro div #index-intro-text p {
-            font-size: 1.25rem; } }
-        @media (min-width: 1440px) {
-          #index-intro div #index-intro-text p {
-            font-size: 1.375rem; } }
+      padding: 5% 0% 5% 5%; }
     #index-intro div #question-mark {
       grid-area: question; }
-      #index-intro div #question-mark span {
-        color: rgba(210, 175, 54, 0.75);
-        font-family: 'Changa One', cursive;
-        font-size: 5rem; }
-        @media (min-width: 768px) {
-          #index-intro div #question-mark span {
-            font-size: 6.25rem; } }
-        @media (min-width: 1025px) {
-          #index-intro div #question-mark span {
-            font-size: 9.375rem; } }
-        @media (min-width: 1440px) {
-          #index-intro div #question-mark span {
-            font-size: 12.5rem; } }
+      @media (min-width: 768px) {
+        #index-intro div #question-mark {
+          display: grid;
+          place-items: center; } }

@@ -74,17 +74,23 @@
             grid-template-columns: 80% auto;
         }
 
-        #index-intro-text {
+        #intro-text {
             grid-area: text;
             padding: 5% 0%;
 
-            @include md{
-                padding-left: 5%;
+            @include md {
+                // padding-left: 5%;
+            }
+
+            h2 {
+                color: $orange;
+                font-weight: 700;
             }
         }
 
         #question-mark {
             align-items: top;
+            color: rgba($color: $yellow, $alpha: 0.75);
             display: flex;
             grid-area: question;
             justify-content: center;
@@ -100,3 +106,92 @@
 /* =============
     Index-Card1
 ============= */
+#index-card1 {
+    background-image: url("../img/index/rhino.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+
+    @include md {
+        background-position: center -200px;
+        height: 50vh;
+    }
+
+    @include lg {
+        background-position: bottom;
+        height: 65vh;
+    }
+
+    div {
+        article {
+            h2 {
+                padding-top: 30px;
+                text-align: right;
+            }
+
+            p {
+                color: $dark-brown;
+                padding-bottom: 10px;
+                padding-left: 5%;
+                text-align: right;
+
+                @include md {
+                    padding-left: 62%;
+                }
+
+                @include lg {
+                    padding-left: 70%;
+                }
+            }
+        }
+    }
+}
+
+#animal-name {
+    background-color: $green;
+
+    h3 {
+        color: rgba($color: $light-green, $alpha: 0.75);
+        display: inline;
+        padding-right: 30px;
+    }
+}
+
+/* =============
+    Index-index-fact1
+============= */
+#index-fact1 {
+    background-color: $green;
+
+    div {
+        display: grid;
+        grid-template-areas: "exclamation text";
+        grid-template-columns: auto 90%;
+
+        #exclamation-mark1 {
+            color: rgba($color: $yellow, $alpha: 0.75);
+            grid-area: exclamation;
+        }
+
+        article {
+            grid-area: text;
+
+            h2 {
+                color: $orange;
+
+                span {
+                    color: $yellow;
+                }
+            }
+
+            h2:first-child {
+                padding-top: 12%;
+            }
+
+            h2:last-child {
+                padding-bottom: 8%;
+            }
+        }
+    }
+}

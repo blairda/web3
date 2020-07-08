@@ -2,12 +2,8 @@
     Typography
 ============= */
 // font-family: 'Catamaran', sans-serif;
-// font-family: 'Changa One', cursive;
+// font-family: 'Changa', sans-serif;
 // font-family: 'Muli', sans-serif;
-
-body{
-    // font-family: 'Muli', sans-serif;
-}
 
 h1,h2,h3,h4{
     margin: 0;
@@ -22,7 +18,7 @@ p{
 .title{
     h1 {
         color: $orange;
-        font-family: 'Changa One', cursive;
+        font-family: 'Changa', sans-serif;
         font-size: rem-calc(36);
 
         @include md {
@@ -42,8 +38,9 @@ p{
 
 .subtitle{
     h2 {
-        color: $orange;
+        color: $brown;
         font-family: 'Catamaran', sans-serif;
+        font-weight: 800;
         font-size: rem-calc(22);
         line-height: rem-calc(28);
 
@@ -63,7 +60,7 @@ p{
     }
 }
 
-.opening{
+.body{
     p {
         color: $beige;
         font-family: 'Milu', sans-serif;
@@ -90,10 +87,9 @@ p{
     }
 }
 
-.punctuation{
-    span {
-        color: rgba($color: $yellow, $alpha: 0.75);
-        font-family: 'Changa One', cursive;
+.large-type{
+    h3 {
+        font-family: 'Changa', sans-serif;
         font-size: rem-calc(80);
 
         @include md {

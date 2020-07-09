@@ -21,6 +21,30 @@ a:visited {
     transition: 0.25s;
 }
 
+.show-for-md {
+    display: none;
+
+    @include md {
+        display: block;
+    }
+}
+
+.show-for-lg {
+    display: none;
+
+    @include lg {
+        display: block;
+    }
+}
+
+.show-for-xl {
+    display: none;
+
+    @include xl {
+        display: block;
+    }
+}
+
 .grid-container {
     display: grid;
     grid-template-areas: ". container .";

@@ -38,6 +38,94 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/gallery/1elephant.jpg": {
+		"ft": 16384,
+		"iS": 2206826,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/1elephant.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/2leopard.jpg": {
+		"ft": 16384,
+		"iS": 396305,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/2leopard.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/3gorilla.jpg": {
+		"ft": 16384,
+		"iS": 416328,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/3gorilla.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/4zebra.jpg": {
+		"ft": 16384,
+		"iS": 295934,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/4zebra.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/5rhinos.jpg": {
+		"ft": 16384,
+		"iS": 399458,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/5rhinos.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/6giraffes.jpg": {
+		"ft": 16384,
+		"iS": 1094487,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/6giraffes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/7hippo.jpg": {
+		"ft": 16384,
+		"iS": 329775,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/7hippo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/8rhino.jpg": {
+		"ft": 16384,
+		"iS": 354431,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/8rhino.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/header/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,

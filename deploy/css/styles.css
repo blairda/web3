@@ -332,6 +332,21 @@ a:visited {
   text-decoration: none;
   transition: 0.25s; }
 
+.show-for-md {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-md {
+      display: block; } }
+.show-for-lg {
+  display: none; }
+  @media (min-width: 1025px) {
+    .show-for-lg {
+      display: block; } }
+.show-for-xl {
+  display: none; }
+  @media (min-width: 1440px) {
+    .show-for-xl {
+      display: block; } }
 .grid-container {
   display: grid;
   grid-template-areas: ". container .";
@@ -904,7 +919,47 @@ footer {
       #gallery-intro div {
         padding: 40px 10%; } }
     #gallery-intro div section h1 {
-      text-align: center;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      text-align: center; }
     #gallery-intro div article p {
       text-align: center; }
+
+#gallery div ul {
+  display: grid;
+  grid-template-areas: "one" "two" "three";
+  grid-template-rows: repeat(3, 320px); }
+  @media (min-width: 768px) {
+    #gallery div ul {
+      grid-template-areas: "one two" "three four";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); } }
+  @media (min-width: 1025px) {
+    #gallery div ul {
+      grid-template-areas: "one one two" "three four four" "five five six";
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 340px); } }
+  @media (min-width: 1440px) {
+    #gallery div ul {
+      grid-template-areas: "one one two three" "four four five five" "six seven seven eight";
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 400px); } }
+  #gallery div ul li img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%; }
+  #gallery div ul li:nth-child(1) {
+    grid-area: one; }
+  #gallery div ul li:nth-child(2) {
+    grid-area: two; }
+  #gallery div ul li:nth-child(3) {
+    grid-area: three; }
+  #gallery div ul li:nth-child(4) {
+    grid-area: four; }
+  #gallery div ul li:nth-child(5) {
+    grid-area: five; }
+  #gallery div ul li:nth-child(6) {
+    grid-area: six; }
+  #gallery div ul li:nth-child(7) {
+    grid-area: seven; }
+  #gallery div ul li:nth-child(8) {
+    grid-area: eight; }

@@ -1,25 +1,101 @@
 /* =============
     Gallery-Content
 ============= */
-#gallery-intro{
+#gallery-intro {
     background-color: $green;
-    
-    div{
+
+    div {
         padding: 40px 0;
 
-        @include lg{
+        @include lg {
             padding: 40px 10%;
         }
 
-        section{
-            h1{
-                text-align: center;
+        section {
+            h1 {
                 padding-bottom: 10px;
+                text-align: center;
             }
         }
-        article{
-            p{
+
+        article {
+            p {
                 text-align: center;
+            }
+        }
+    }
+}
+
+#gallery {
+    div {
+        ul {
+            display: grid;
+            grid-template-areas: "one"
+                "two"
+                "three";
+            grid-template-rows: repeat(3, 320px);
+
+            @include md {
+                grid-template-areas: "one two"
+                    "three four";
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+
+            @include lg {
+                grid-template-areas: "one one two"
+                    "three four four"
+                    "five five six";
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 340px);
+            }
+
+            @include xl {
+                grid-template-areas: "one one two three"
+                    "four four five five"
+                    "six seven seven eight";
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 400px);
+            }
+
+            li {
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+
+            li:nth-child(1) {
+                grid-area: one;
+            }
+
+            li:nth-child(2) {
+                grid-area: two;
+            }
+
+            li:nth-child(3) {
+                grid-area: three;
+            }
+
+            li:nth-child(4) {
+                grid-area: four;
+            }
+
+            li:nth-child(5) {
+                grid-area: five;
+            }
+
+            li:nth-child(6) {
+                grid-area: six;
+            }
+
+            li:nth-child(7) {
+                grid-area: seven;
+            }
+
+            li:nth-child(8) {
+                grid-area: eight;
             }
         }
     }

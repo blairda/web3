@@ -1,0 +1,1 @@
+$('[data-fancybox="gallery"]').fancybox({buttons:["slideShow","fullScreen","close"]}),$(document).ready((function(){console.log("ready!!")}));

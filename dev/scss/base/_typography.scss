@@ -62,6 +62,7 @@ p,h1,h2,h3,h4,h5,h6{
         font-family: 'Milu', sans-serif;
         font-size: rem-calc(16);
         line-height: rem-calc(20);
+        padding-bottom: 10px;
 
         @include md {
             font-size: rem-calc(18);
@@ -78,9 +79,9 @@ p,h1,h2,h3,h4,h5,h6{
         }
     }
 
-    p:first-child{
-        padding-bottom: 10px;
-    }
+    // p:first-child{
+    //     padding-bottom: 10px;
+    // }
 }
 
 .large-type{

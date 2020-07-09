@@ -412,7 +412,8 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #FFFADF;
   font-family: 'Milu', sans-serif;
   font-size: 1rem;
-  line-height: 1.25rem; }
+  line-height: 1.25rem;
+  padding-bottom: 10px; }
   @media (min-width: 768px) {
     .body p {
       font-size: 1.125rem;
@@ -424,9 +425,6 @@ p, h1, h2, h3, h4, h5, h6 {
   @media (min-width: 1440px) {
     .body p {
       font-size: 1.375rem; } }
-.body p:first-child {
-  padding-bottom: 10px; }
-
 .large-type h3 {
   font-family: 'Changa', sans-serif;
   font-size: 6.25rem;
@@ -975,3 +973,71 @@ footer {
     grid-area: seven; }
   #gallery div ul li:nth-child(8) {
     grid-area: eight; }
+
+/* =============
+    Case-Study-Intro
+============= */
+#case-study-intro {
+  background-color: #141A02; }
+  #case-study-intro div {
+    padding: 40px 0; }
+    @media (min-width: 1025px) {
+      #case-study-intro div {
+        padding: 40px 10%; } }
+    #case-study-intro div section h1 {
+      padding-bottom: 10px;
+      text-align: center; }
+    #case-study-intro div article p {
+      text-align: center; }
+
+/* =============
+    Case-Study-About
+============= */
+#case-study-about {
+  background-color: #141A02; }
+  #case-study-about div #case-study-title {
+    padding: 5% 0%;
+    margin-bottom: 75px; }
+    #case-study-about div #case-study-title h2 {
+      color: #E18A37;
+      font-weight: 700; }
+    #case-study-about div #case-study-title #facts-grid {
+      display: grid;
+      grid-template-columns: 50% auto;
+      padding-bottom: 5px; }
+      #case-study-about div #case-study-title #facts-grid #case-study-facts p span {
+        font-style: italic;
+        font-weight: 800; }
+      #case-study-about div #case-study-title #facts-grid #case-study-facts2 p {
+        text-align: right; }
+        @media (min-width: 768px) {
+          #case-study-about div #case-study-title #facts-grid #case-study-facts2 p {
+            text-align: left; } }
+        #case-study-about div #case-study-title #facts-grid #case-study-facts2 p span {
+          font-style: italic;
+          font-weight: 800; }
+
+#elephant-name {
+  background-color: #141A02;
+  position: relative;
+  padding-bottom: 5%; }
+  @media (min-width: 1025px) {
+    #elephant-name {
+      padding-bottom: 10%; } }
+  #elephant-name h3 {
+    color: rgba(239, 255, 223, 0.75);
+    position: absolute;
+    right: -340px;
+    top: -120px; }
+    @media (min-width: 768px) {
+      #elephant-name h3 {
+        right: -60px;
+        top: -150px; } }
+    @media (min-width: 1025px) {
+      #elephant-name h3 {
+        right: -70px;
+        top: -160px; } }
+    @media (min-width: 1440px) {
+      #elephant-name h3 {
+        right: -70px;
+        top: -200px; } }

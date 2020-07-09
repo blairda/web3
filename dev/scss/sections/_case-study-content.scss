@@ -1,0 +1,112 @@
+/* =============
+    Case-Study-Intro
+============= */
+#case-study-intro {
+    background-color: $green;
+
+    div {
+        padding: 40px 0;
+
+        @include lg {
+            padding: 40px 10%;
+        }
+
+        section {
+            h1 {
+                padding-bottom: 10px;
+                text-align: center;
+            }
+        }
+
+        article {
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* =============
+    Case-Study-About
+============= */
+#case-study-about {
+    background-color: $green;
+
+    div {
+        #case-study-title {
+            padding: 5% 0%;
+            margin-bottom: 75px;
+
+            h2 {
+                color: $orange;
+                font-weight: 700;
+            }
+
+            #facts-grid {
+                display: grid;
+                grid-template-columns: 50% auto;
+                padding-bottom: 5px;
+
+                #case-study-facts {
+                    p {
+                        span {
+                            font-style: italic;
+                            font-weight: 800;
+                        }
+
+                        // span:nth-child(2){
+                        //     font-weight: 400;
+                        // }
+                    }
+                }
+
+                #case-study-facts2 {
+                    p {
+                        text-align: right;
+
+                        @include md {
+                            text-align: left;
+                        }
+
+                        span {
+                            font-style: italic;
+                            font-weight: 800;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#elephant-name {
+    background-color: $green;
+    position: relative;
+    padding-bottom: 5%;
+
+    @include lg{
+        padding-bottom: 10%;
+    }
+
+    h3 {
+        color: rgba($color: $light-green, $alpha: 0.75);
+        position: absolute;
+        right: -340px;
+        top: -120px;
+
+        @include md {
+            right: -60px;
+            top: -150px;
+        }
+
+        @include lg {
+            right: -70px;
+            top: -160px;
+        }
+
+        @include xl {
+            right: -70px;
+            top: -200px;
+        }
+    }
+}

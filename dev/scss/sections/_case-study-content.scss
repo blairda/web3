@@ -33,9 +33,21 @@
     >div{
         .my-slider{
             div{
-                height: 600px;
+                height: 50vh;
+
+                @include md{
+                    height: 60vh;
+                }
+
+                @include lg{
+                    height: 70vh;
+                }
+
+                @include xl{
+                    height: 75vh;
+                }
+
                 img{
-                    // border: 1px solid red;
                     object-fit: cover;
                     object-position: center;
                     height: 100%;

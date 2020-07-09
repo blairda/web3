@@ -470,6 +470,27 @@ textarea {
   transition: opacity .35s ease,visibility 0s ease .35s;
   visibility: hidden; }
 
+.tns-nav {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #141A02; }
+
+.tns-nav > [aria-controls] {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 20px 20px 0;
+  border-radius: 0%;
+  background: #D2AF36;
+  border: 0; }
+
+.tns-nav > .tns-nav-active {
+  background: #E18A37; }
+
+.edgePadding {
+  background-color: #141A02;
+  color: #141A02; }
+
 /* =============
     Header
 ============= */
@@ -994,7 +1015,16 @@ footer {
     Case-Study-Slides
 ============= */
 #case-study-slides > div .my-slider div {
-  height: 600px; }
+  height: 50vh; }
+  @media (min-width: 768px) {
+    #case-study-slides > div .my-slider div {
+      height: 60vh; } }
+  @media (min-width: 1025px) {
+    #case-study-slides > div .my-slider div {
+      height: 70vh; } }
+  @media (min-width: 1440px) {
+    #case-study-slides > div .my-slider div {
+      height: 75vh; } }
   #case-study-slides > div .my-slider div img {
     object-fit: cover;
     object-position: center;

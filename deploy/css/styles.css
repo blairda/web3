@@ -991,6 +991,17 @@ footer {
       text-align: center; }
 
 /* =============
+    Case-Study-Slides
+============= */
+#case-study-slides > div .my-slider div {
+  height: 600px; }
+  #case-study-slides > div .my-slider div img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%; }
+
+/* =============
     Case-Study-About
 ============= */
 #case-study-about {

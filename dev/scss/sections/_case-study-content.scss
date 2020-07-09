@@ -27,6 +27,27 @@
 }
 
 /* =============
+    Case-Study-Slides
+============= */
+#case-study-slides{
+    >div{
+        .my-slider{
+            div{
+                height: 600px;
+                img{
+                    // border: 1px solid red;
+                    object-fit: cover;
+                    object-position: center;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+/* =============
     Case-Study-About
 ============= */
 #case-study-about {

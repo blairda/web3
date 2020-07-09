@@ -341,7 +341,8 @@ a:visited {
       grid-template-columns: 50px auto 50px; } }
   @media (min-width: 1440px) {
     .grid-container {
-      grid-template-columns: auto 1440px auto; } }
+      grid-template-areas: ". . container . .";
+      grid-template-columns: auto 50px 1440px 50px auto; } }
   .grid-container > div {
     grid-area: container; }
 
@@ -399,7 +400,7 @@ p, h1, h2, h3, h4, h5, h6 {
   @media (min-width: 768px) {
     .body p {
       font-size: 1.125rem;
-      line-height: 1.5rem; } }
+      line-height: 1.375rem; } }
   @media (min-width: 1025px) {
     .body p {
       font-size: 1.25rem;
@@ -412,16 +413,20 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .large-type h3 {
   font-family: 'Changa', sans-serif;
-  font-size: 5rem; }
+  font-size: 6.25rem;
+  letter-spacing: 45px; }
   @media (min-width: 768px) {
     .large-type h3 {
-      font-size: 9.375rem; } }
+      font-size: 9.375rem;
+      letter-spacing: 45px; } }
   @media (min-width: 1025px) {
     .large-type h3 {
-      font-size: 12.5rem; } }
+      font-size: 12.5rem;
+      letter-spacing: 45px; } }
   @media (min-width: 1440px) {
     .large-type h3 {
-      font-size: 15.625rem; } }
+      font-size: 15.625rem;
+      letter-spacing: 45px; } }
 /* =============
     Buttons
 ============= */
@@ -627,6 +632,10 @@ footer {
     #index-card1 {
       background-position: bottom;
       height: 65vh; } }
+  @media (min-width: 1440px) {
+    #index-card1 {
+      background-position: center -600px;
+      height: 70vh; } }
   #index-card1 div article h2 {
     padding-top: 30px;
     text-align: right; }
@@ -641,22 +650,43 @@ footer {
     @media (min-width: 1025px) {
       #index-card1 div article p {
         padding-left: 70%; } }
+    @media (min-width: 1440px) {
+      #index-card1 div article p {
+        line-height: 1.75rem;
+        padding-left: 75%; } }
     #index-card1 div article p span {
       font-style: italic;
       font-weight: 800; }
 
-#animal-name {
-  background-color: #141A02; }
-  #animal-name h3 {
+#rhino-name {
+  background-color: #141A02;
+  position: relative; }
+  #rhino-name h3 {
     color: rgba(239, 255, 223, 0.75);
-    display: inline;
-    padding-right: 30px; }
-
+    position: absolute;
+    right: -60px;
+    top: -60px; }
+    @media (min-width: 768px) {
+      #rhino-name h3 {
+        right: -60px;
+        top: -90px; } }
+    @media (min-width: 1025px) {
+      #rhino-name h3 {
+        right: -60px;
+        top: -120px; } }
+    @media (min-width: 1440px) {
+      #rhino-name h3 {
+        right: -70px;
+        top: -150px; } }
 /* =============
     Index-index-fact1
 ============= */
 #index-fact1 {
-  background-color: #141A02; }
+  background-color: #141A02;
+  padding-top: 30px; }
+  @media (min-width: 768px) {
+    #index-fact1 {
+      padding-top: 0; } }
   #index-fact1 div {
     display: grid;
     grid-template-areas: "exclamation text";
@@ -674,3 +704,192 @@ footer {
         padding-top: 12%; }
       #index-fact1 div article h2:last-child {
         padding-bottom: 8%; }
+        @media (min-width: 768px) {
+          #index-fact1 div article h2:last-child {
+            padding-bottom: 4%; } }
+/* =============
+    Index-Card2
+============= */
+#index-card2 {
+  background-image: url("../img/index/leopard2.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh; }
+  @media (min-width: 768px) {
+    #index-card2 {
+      background-position: center -200px;
+      height: 50vh; } }
+  @media (min-width: 1025px) {
+    #index-card2 {
+      background-position: bottom;
+      height: 65vh; } }
+  @media (min-width: 1440px) {
+    #index-card2 {
+      background-position: center -600px;
+      height: 70vh; } }
+  #index-card2 div article h2 {
+    padding-top: 30px; }
+  #index-card2 div article p {
+    color: #150700;
+    padding-bottom: 10px;
+    padding-right: 5%; }
+    @media (min-width: 768px) {
+      #index-card2 div article p {
+        padding-right: 62%; } }
+    @media (min-width: 1025px) {
+      #index-card2 div article p {
+        padding-right: 70%; } }
+    @media (min-width: 1440px) {
+      #index-card2 div article p {
+        line-height: 1.75rem;
+        padding-right: 75%; } }
+    #index-card2 div article p span {
+      font-style: italic;
+      font-weight: 800; }
+
+#leopard-name {
+  background-color: #141A02;
+  position: relative; }
+  #leopard-name h3 {
+    color: rgba(240, 198, 142, 0.75);
+    letter-spacing: 15px;
+    position: absolute;
+    right: -30px;
+    top: -60px; }
+    @media (min-width: 768px) {
+      #leopard-name h3 {
+        left: -20px;
+        letter-spacing: 45px;
+        top: -90px; } }
+    @media (min-width: 1025px) {
+      #leopard-name h3 {
+        right: -60px;
+        top: -120px; } }
+    @media (min-width: 1440px) {
+      #leopard-name h3 {
+        right: -70px;
+        top: -150px; } }
+/* =============
+    Index-index-fact2
+============= */
+#index-fact2 {
+  background-color: #141A02;
+  padding-top: 30px; }
+  @media (min-width: 1440px) {
+    #index-fact2 {
+      padding-top: 0; } }
+  #index-fact2 div {
+    display: grid;
+    grid-template-areas: "text exclamation";
+    grid-template-columns: 90% auto; }
+    #index-fact2 div #exclamation-mark2 {
+      color: rgba(210, 175, 54, 0.75);
+      grid-area: exclamation; }
+    #index-fact2 div article {
+      grid-area: text; }
+      #index-fact2 div article h2 {
+        color: #E18A37;
+        padding-right: 5%;
+        text-align: right; }
+        #index-fact2 div article h2 span {
+          color: #D2AF36; }
+      #index-fact2 div article h2:first-child {
+        padding-top: 12%; }
+      #index-fact2 div article h2:last-child {
+        padding-bottom: 8%; }
+        @media (min-width: 768px) {
+          #index-fact2 div article h2:last-child {
+            padding-bottom: 4%; } }
+/* =============
+    Index-Card3
+============= */
+#index-card3 {
+  background-image: url("../img/index/hippo.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh; }
+  @media (min-width: 768px) {
+    #index-card3 {
+      background-position: center -200px;
+      height: 50vh; } }
+  @media (min-width: 1025px) {
+    #index-card3 {
+      background-position: bottom;
+      height: 65vh; } }
+  @media (min-width: 1440px) {
+    #index-card3 {
+      background-position: center -500px;
+      height: 70vh; } }
+  #index-card3 div article h2 {
+    padding-top: 30px;
+    text-align: right; }
+  #index-card3 div article p {
+    color: #150700;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    text-align: right; }
+    @media (min-width: 768px) {
+      #index-card3 div article p {
+        padding-left: 62%; } }
+    @media (min-width: 1025px) {
+      #index-card3 div article p {
+        padding-left: 68%; } }
+    @media (min-width: 1440px) {
+      #index-card3 div article p {
+        line-height: 1.75rem;
+        padding-left: 75%; } }
+    #index-card3 div article p span {
+      font-style: italic;
+      font-weight: 800; }
+
+#hippo-name {
+  background-color: #141A02;
+  position: relative; }
+  #hippo-name h3 {
+    color: rgba(175, 187, 186, 0.75);
+    position: absolute;
+    right: -60px;
+    top: -60px; }
+    @media (min-width: 768px) {
+      #hippo-name h3 {
+        right: -60px;
+        top: -90px; } }
+    @media (min-width: 1025px) {
+      #hippo-name h3 {
+        right: -60px;
+        top: -120px; } }
+    @media (min-width: 1440px) {
+      #hippo-name h3 {
+        right: -70px;
+        top: -150px; } }
+/* =============
+    Index-index-fact3
+============= */
+#index-fact3 {
+  background-color: #141A02;
+  padding-top: 30px; }
+  @media (min-width: 768px) {
+    #index-fact3 {
+      padding-top: 0; } }
+  #index-fact3 div {
+    display: grid;
+    grid-template-areas: "exclamation text";
+    grid-template-columns: auto 90%; }
+    #index-fact3 div #exclamation-mark3 {
+      color: rgba(210, 175, 54, 0.75);
+      grid-area: exclamation; }
+    #index-fact3 div article {
+      grid-area: text; }
+      #index-fact3 div article h2 {
+        color: #E18A37; }
+        #index-fact3 div article h2 span {
+          color: #D2AF36; }
+      #index-fact3 div article h2:first-child {
+        padding-top: 12%; }
+      #index-fact3 div article h2:last-child {
+        padding-bottom: 8%; }
+        @media (min-width: 768px) {
+          #index-fact3 div article h2:last-child {
+            padding-bottom: 4%; } }

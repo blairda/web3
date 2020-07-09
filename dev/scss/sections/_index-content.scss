@@ -123,6 +123,11 @@
         height: 65vh;
     }
 
+    @include xl {
+        background-position: center -600px;
+        height: 70vh;
+    }
+
     div {
         article {
             h2 {
@@ -144,7 +149,12 @@
                     padding-left: 70%;
                 }
 
-                span{
+                @include xl {
+                    line-height: rem-calc(28);
+                    padding-left: 75%;
+                }
+
+                span {
                     font-style: italic;
                     font-weight: 800;
                 }
@@ -153,13 +163,30 @@
     }
 }
 
-#animal-name {
+#rhino-name {
     background-color: $green;
+    position: relative;
 
     h3 {
         color: rgba($color: $light-green, $alpha: 0.75);
-        display: inline;
-        padding-right: 30px;
+        position: absolute;
+        right: -60px;
+        top: -60px;
+
+        @include md {
+            right: -60px;
+            top: -90px;
+        }
+
+        @include lg {
+            right: -60px;
+            top: -120px;
+        }
+
+        @include xl {
+            right: -70px;
+            top: -150px;
+        }
     }
 }
 
@@ -168,6 +195,11 @@
 ============= */
 #index-fact1 {
     background-color: $green;
+    padding-top: 30px;
+
+    @include md {
+        padding-top: 0;
+    }
 
     div {
         display: grid;
@@ -196,6 +228,280 @@
 
             h2:last-child {
                 padding-bottom: 8%;
+
+                @include md {
+                    padding-bottom: 4%;
+                }
+            }
+        }
+    }
+}
+
+/* =============
+    Index-Card2
+============= */
+#index-card2 {
+    background-image: url("../img/index/leopard2.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+
+    @include md {
+        background-position: center -200px;
+        height: 50vh;
+    }
+
+    @include lg {
+        background-position: bottom;
+        height: 65vh;
+    }
+
+    @include xl {
+        background-position: center -600px;
+        height: 70vh;
+    }
+
+    div {
+        article {
+            h2 {
+                padding-top: 30px;
+            }
+
+            p {
+                color: $dark-brown;
+                padding-bottom: 10px;
+                padding-right: 5%;
+
+                @include md {
+                    padding-right: 62%;
+                }
+
+                @include lg {
+                    padding-right: 70%;
+                }
+
+                @include xl {
+                    line-height: rem-calc(28);
+                    padding-right: 75%;
+                }
+
+                span {
+                    font-style: italic;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+#leopard-name {
+    background-color: $green;
+    position: relative;
+
+    h3 {
+        color: rgba($color: $light-brown, $alpha: 0.75);
+        letter-spacing: 15px;
+        position: absolute;
+        right: -30px;
+        top: -60px;
+
+        @include md {
+            left: -20px;
+            letter-spacing: 45px;
+            top: -90px;
+        }
+
+        @include lg {
+            right: -60px;
+            top: -120px;
+        }
+
+        @include xl {
+            right: -70px;
+            top: -150px;
+        }
+    }
+}
+
+/* =============
+    Index-index-fact2
+============= */
+#index-fact2 {
+    background-color: $green;
+    padding-top: 30px;
+
+    @include xl {
+        padding-top: 0;
+    }
+
+    div {
+        display: grid;
+        grid-template-areas: "text exclamation";
+        grid-template-columns: 90% auto;
+
+        #exclamation-mark2 {
+            color: rgba($color: $yellow, $alpha: 0.75);
+            grid-area: exclamation;
+        }
+
+        article {
+            grid-area: text;
+
+            h2 {
+                color: $orange;
+                padding-right: 5%;
+                text-align: right;
+
+                span {
+                    color: $yellow;
+                }
+            }
+
+            h2:first-child {
+                padding-top: 12%;
+            }
+
+            h2:last-child {
+                padding-bottom: 8%;
+
+                @include md {
+                    padding-bottom: 4%;
+                }
+            }
+        }
+    }
+}
+
+/* =============
+    Index-Card3
+============= */
+#index-card3 {
+    background-image: url("../img/index/hippo.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+
+    @include md {
+        background-position: center -200px;
+        height: 50vh;
+    }
+
+    @include lg {
+        background-position: bottom;
+        height: 65vh;
+    }
+
+    @include xl {
+        background-position: center -500px;
+        height: 70vh;
+    }
+
+    div {
+        article {
+            h2 {
+                padding-top: 30px;
+                text-align: right;
+            }
+
+            p {
+                color: $dark-brown;
+                padding-bottom: 10px;
+                padding-left: 5%;
+                text-align: right;
+
+                @include md {
+                    padding-left: 62%;
+                }
+
+                @include lg {
+                    padding-left: 68%;
+                }
+
+                @include xl {
+                    line-height: rem-calc(28);
+                    padding-left: 75%;
+                }
+
+                span {
+                    font-style: italic;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+#hippo-name {
+    background-color: $green;
+    position: relative;
+
+    h3 {
+        color: rgba($color: $light-blue, $alpha: 0.75);
+        position: absolute;
+        right: -60px;
+        top: -60px;
+
+        @include md {
+            right: -60px;
+            top: -90px;
+        }
+
+        @include lg {
+            right: -60px;
+            top: -120px;
+        }
+
+        @include xl {
+            right: -70px;
+            top: -150px;
+        }
+    }
+}
+
+/* =============
+    Index-index-fact3
+============= */
+#index-fact3 {
+    background-color: $green;
+    padding-top: 30px;
+
+    @include md {
+        padding-top: 0;
+    }
+
+    div {
+        display: grid;
+        grid-template-areas: "exclamation text";
+        grid-template-columns: auto 90%;
+
+        #exclamation-mark3 {
+            color: rgba($color: $yellow, $alpha: 0.75);
+            grid-area: exclamation;
+        }
+
+        article {
+            grid-area: text;
+
+            h2 {
+                color: $orange;
+
+                span {
+                    color: $yellow;
+                }
+            }
+
+            h2:first-child {
+                padding-top: 12%;
+            }
+
+            h2:last-child {
+                padding-bottom: 8%;
+
+                @include md {
+                    padding-bottom: 4%;
+                }
             }
         }
     }

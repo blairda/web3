@@ -31,7 +31,8 @@ a:visited {
     }
 
     @include xl {
-        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". . container . .";
+        grid-template-columns: auto 50px 1440px 50px auto;
     }
 
     >div {

@@ -365,7 +365,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .title h1 {
   color: #E18A37;
   font-family: 'Changa', sans-serif;
-  font-size: 2.25rem; }
+  font-size: 2.25rem;
+  padding-bottom: 10px; }
   @media (min-width: 768px) {
     .title h1 {
       font-size: 3.75rem; } }
@@ -417,16 +418,13 @@ p, h1, h2, h3, h4, h5, h6 {
   letter-spacing: 45px; }
   @media (min-width: 768px) {
     .large-type h3 {
-      font-size: 9.375rem;
-      letter-spacing: 45px; } }
+      font-size: 9.375rem; } }
   @media (min-width: 1025px) {
     .large-type h3 {
-      font-size: 12.5rem;
-      letter-spacing: 45px; } }
+      font-size: 12.5rem; } }
   @media (min-width: 1440px) {
     .large-type h3 {
-      font-size: 15.625rem;
-      letter-spacing: 45px; } }
+      font-size: 15.625rem; } }
 /* =============
     Buttons
 ============= */
@@ -573,6 +571,8 @@ footer {
     @media (min-width: 1440px) {
       #index-hero div section {
         margin-top: 10%; } }
+    #index-hero div section h1 {
+      padding-bottom: 0; }
     #index-hero div section h1:nth-child(2) {
       margin-left: 10%; }
       @media (min-width: 1025px) {
@@ -893,3 +893,18 @@ footer {
         @media (min-width: 768px) {
           #index-fact3 div article h2:last-child {
             padding-bottom: 4%; } }
+/* =============
+    Gallery-Content
+============= */
+#gallery-intro {
+  background-color: #141A02; }
+  #gallery-intro div {
+    padding: 40px 0; }
+    @media (min-width: 1025px) {
+      #gallery-intro div {
+        padding: 40px 10%; } }
+    #gallery-intro div section h1 {
+      text-align: center;
+      padding-bottom: 10px; }
+    #gallery-intro div article p {
+      text-align: center; }

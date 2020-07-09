@@ -2,12 +2,10 @@
 
 $('[data-fancybox="gallery"]').fancybox({
     buttons: [
-        // "zoom",
-        // "share",
         "slideShow",
         "fullScreen",
-        // "download",
-        // "thumbs",
         "close"
-      ]
+      ],
+    loop:"true",
+    transitionEffect: "zoom-in-out"
 });

@@ -1,0 +1,13 @@
+.fancybox-button, .fancybox-button:link, .fancybox-button:visited{
+    color: $yellow;
+}
+
+.fancybox-infobar {
+    color: $yellow;
+}
+
+.fancybox-caption, .fancybox-infobar, .fancybox-navigation .fancybox-button, .fancybox-toolbar {
+    opacity: 0;
+    transition: opacity .35s ease,visibility 0s ease .35s;
+    visibility: hidden;
+}

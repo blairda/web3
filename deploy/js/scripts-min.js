@@ -1,1 +1,1 @@
-$('[data-fancybox="gallery"]').fancybox({buttons:["slideShow","fullScreen","close"]}),$(document).ready((function(){console.log("ready!!")}));
+$('[data-fancybox="gallery"]').fancybox({buttons:["slideShow","fullScreen","close"],loop:"true",transitionEffect:"zoom-in-out"}),$(document).ready((function(){}));

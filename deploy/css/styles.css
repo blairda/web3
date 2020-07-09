@@ -996,8 +996,8 @@ footer {
 #case-study-about {
   background-color: #141A02; }
   #case-study-about div #case-study-title {
-    padding: 5% 0%;
-    margin-bottom: 75px; }
+    margin-bottom: 75px;
+    padding: 5% 0%; }
     #case-study-about div #case-study-title h2 {
       color: #E18A37;
       font-weight: 700; }
@@ -1008,19 +1008,19 @@ footer {
       #case-study-about div #case-study-title #facts-grid #case-study-facts p span {
         font-style: italic;
         font-weight: 800; }
-      #case-study-about div #case-study-title #facts-grid #case-study-facts2 p {
-        text-align: right; }
-        @media (min-width: 768px) {
-          #case-study-about div #case-study-title #facts-grid #case-study-facts2 p {
-            text-align: left; } }
-        #case-study-about div #case-study-title #facts-grid #case-study-facts2 p span {
-          font-style: italic;
-          font-weight: 800; }
+    #case-study-about div #case-study-title #case-study-facts2 p {
+      text-align: right; }
+      @media (min-width: 768px) {
+        #case-study-about div #case-study-title #case-study-facts2 p {
+          text-align: left; } }
+      #case-study-about div #case-study-title #case-study-facts2 p span {
+        font-style: italic;
+        font-weight: 800; }
 
 #elephant-name {
   background-color: #141A02;
-  position: relative;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  position: relative; }
   @media (min-width: 1025px) {
     #elephant-name {
       padding-bottom: 10%; } }

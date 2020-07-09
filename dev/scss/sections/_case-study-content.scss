@@ -34,8 +34,8 @@
 
     div {
         #case-study-title {
-            padding: 5% 0%;
             margin-bottom: 75px;
+            padding: 5% 0%;
 
             h2 {
                 color: $orange;
@@ -54,24 +54,23 @@
                             font-weight: 800;
                         }
 
-                        // span:nth-child(2){
+                        // span:nth-child(2) {
                         //     font-weight: 400;
-                        // }
                     }
                 }
+            }
 
-                #case-study-facts2 {
-                    p {
-                        text-align: right;
+            #case-study-facts2 {
+                p {
+                    text-align: right;
 
-                        @include md {
-                            text-align: left;
-                        }
+                    @include md {
+                        text-align: left;
+                    }
 
-                        span {
-                            font-style: italic;
-                            font-weight: 800;
-                        }
+                    span {
+                        font-style: italic;
+                        font-weight: 800;
                     }
                 }
             }
@@ -81,10 +80,10 @@
 
 #elephant-name {
     background-color: $green;
-    position: relative;
     padding-bottom: 5%;
+    position: relative;
 
-    @include lg{
+    @include lg {
         padding-bottom: 10%;
     }
 

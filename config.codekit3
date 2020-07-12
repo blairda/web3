@@ -278,7 +278,7 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/gallery.html",
-		"oF": 2
+		"oF": 3
 		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
@@ -565,9 +565,9 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/template.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/node_modules": {
 		"ft": 65536,
@@ -590,6 +590,14 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0
 		},
 	"/README.md": {
 		"cB": 0,

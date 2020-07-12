@@ -55,8 +55,8 @@ a:visited {
     }
 
     @include xl {
-        grid-template-areas: ". . container . .";
-        grid-template-columns: auto 50px 1440px 50px auto;
+        grid-template-areas: ". container .";
+        grid-template-columns: 8% auto 8%;
     }
 
     >div {

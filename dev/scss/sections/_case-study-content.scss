@@ -32,6 +32,7 @@
 #case-study-slides{
     >div{
         .my-slider{
+            background-color: $green;
             div{
                 height: 50vh;
 
@@ -123,21 +124,22 @@
     h3 {
         color: rgba($color: $light-green, $alpha: 0.75);
         position: absolute;
-        right: -340px;
+        right: 0px;
         top: -120px;
+        letter-spacing: 0px;
 
         @include md {
-            right: -60px;
+            letter-spacing: 10px;
             top: -150px;
         }
 
         @include lg {
-            right: -70px;
+            letter-spacing: 20px;
             top: -160px;
         }
 
         @include xl {
-            right: -70px;
+            letter-spacing: 30px;
             top: -200px;
         }
     }

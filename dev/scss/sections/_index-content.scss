@@ -155,7 +155,6 @@
 
                 @include xl {
                     line-height: rem-calc(28);
-                    padding-left: 75%;
                 }
 
                 span {
@@ -174,21 +173,22 @@
     h3 {
         color: rgba($color: $light-green, $alpha: 0.75);
         position: absolute;
-        right: -60px;
+        letter-spacing: 30px;
+        right: 0px;
         top: -60px;
 
         @include md {
-            right: -60px;
+            letter-spacing: 50px;
             top: -90px;
         }
 
         @include lg {
-            right: -60px;
+            letter-spacing: 70px;
             top: -120px;
         }
 
         @include xl {
-            right: -70px;
+            letter-spacing: 90px;
             top: -150px;
         }
     }
@@ -287,7 +287,6 @@
 
                 @include xl {
                     line-height: rem-calc(28);
-                    padding-right: 75%;
                 }
 
                 span {
@@ -307,22 +306,22 @@
         color: rgba($color: $light-brown, $alpha: 0.75);
         letter-spacing: 15px;
         position: absolute;
-        right: -30px;
+        left: 0px;
         top: -60px;
+        letter-spacing: 10px;
 
         @include md {
-            left: -20px;
-            letter-spacing: 45px;
+            letter-spacing: 20px;
             top: -90px;
         }
 
         @include lg {
-            right: -60px;
+            letter-spacing: 30px;
             top: -120px;
         }
 
         @include xl {
-            right: -70px;
+            letter-spacing: 40px;
             top: -150px;
         }
     }
@@ -425,7 +424,6 @@
 
                 @include xl {
                     line-height: rem-calc(28);
-                    padding-left: 75%;
                 }
 
                 span {
@@ -444,21 +442,22 @@
     h3 {
         color: rgba($color: $light-blue, $alpha: 0.75);
         position: absolute;
-        right: -60px;
+        right: 0px;
         top: -60px;
+        letter-spacing: 30px;
 
         @include md {
-            right: -60px;
+            letter-spacing: 50px;
             top: -90px;
         }
 
         @include lg {
-            right: -60px;
+            letter-spacing: 70px;
             top: -120px;
         }
 
         @include xl {
-            right: -70px;
+            letter-spacing: 90px;
             top: -150px;
         }
     }

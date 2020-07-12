@@ -356,8 +356,8 @@ a:visited {
       grid-template-columns: 50px auto 50px; } }
   @media (min-width: 1440px) {
     .grid-container {
-      grid-template-areas: ". . container . .";
-      grid-template-columns: auto 50px 1440px 50px auto; } }
+      grid-template-areas: ". container .";
+      grid-template-columns: 8% auto 8%; } }
   .grid-container > div {
     grid-area: container; }
 
@@ -697,8 +697,7 @@ footer {
         padding-left: 70%; } }
     @media (min-width: 1440px) {
       #index-card1 div article p {
-        line-height: 1.75rem;
-        padding-left: 75%; } }
+        line-height: 1.75rem; } }
     #index-card1 div article p span {
       font-style: italic;
       font-weight: 800; }
@@ -709,19 +708,20 @@ footer {
   #rhino-name h3 {
     color: rgba(239, 255, 223, 0.75);
     position: absolute;
-    right: -60px;
+    letter-spacing: 30px;
+    right: 0px;
     top: -60px; }
     @media (min-width: 768px) {
       #rhino-name h3 {
-        right: -60px;
+        letter-spacing: 50px;
         top: -90px; } }
     @media (min-width: 1025px) {
       #rhino-name h3 {
-        right: -60px;
+        letter-spacing: 70px;
         top: -120px; } }
     @media (min-width: 1440px) {
       #rhino-name h3 {
-        right: -70px;
+        letter-spacing: 90px;
         top: -150px; } }
 /* =============
     Index-index-fact1
@@ -787,8 +787,7 @@ footer {
         padding-right: 70%; } }
     @media (min-width: 1440px) {
       #index-card2 div article p {
-        line-height: 1.75rem;
-        padding-right: 75%; } }
+        line-height: 1.75rem; } }
     #index-card2 div article p span {
       font-style: italic;
       font-weight: 800; }
@@ -800,20 +799,20 @@ footer {
     color: rgba(240, 198, 142, 0.75);
     letter-spacing: 15px;
     position: absolute;
-    right: -30px;
-    top: -60px; }
+    left: 0px;
+    top: -60px;
+    letter-spacing: 10px; }
     @media (min-width: 768px) {
       #leopard-name h3 {
-        left: -20px;
-        letter-spacing: 45px;
+        letter-spacing: 20px;
         top: -90px; } }
     @media (min-width: 1025px) {
       #leopard-name h3 {
-        right: -60px;
+        letter-spacing: 30px;
         top: -120px; } }
     @media (min-width: 1440px) {
       #leopard-name h3 {
-        right: -70px;
+        letter-spacing: 40px;
         top: -150px; } }
 /* =============
     Index-index-fact2
@@ -883,8 +882,7 @@ footer {
         padding-left: 68%; } }
     @media (min-width: 1440px) {
       #index-card3 div article p {
-        line-height: 1.75rem;
-        padding-left: 75%; } }
+        line-height: 1.75rem; } }
     #index-card3 div article p span {
       font-style: italic;
       font-weight: 800; }
@@ -895,19 +893,20 @@ footer {
   #hippo-name h3 {
     color: rgba(175, 187, 186, 0.75);
     position: absolute;
-    right: -60px;
-    top: -60px; }
+    right: 0px;
+    top: -60px;
+    letter-spacing: 30px; }
     @media (min-width: 768px) {
       #hippo-name h3 {
-        right: -60px;
+        letter-spacing: 50px;
         top: -90px; } }
     @media (min-width: 1025px) {
       #hippo-name h3 {
-        right: -60px;
+        letter-spacing: 70px;
         top: -120px; } }
     @media (min-width: 1440px) {
       #hippo-name h3 {
-        right: -70px;
+        letter-spacing: 90px;
         top: -150px; } }
 /* =============
     Index-index-fact3
@@ -1014,22 +1013,24 @@ footer {
 /* =============
     Case-Study-Slides
 ============= */
-#case-study-slides > div .my-slider div {
-  height: 50vh; }
-  @media (min-width: 768px) {
-    #case-study-slides > div .my-slider div {
-      height: 60vh; } }
-  @media (min-width: 1025px) {
-    #case-study-slides > div .my-slider div {
-      height: 70vh; } }
-  @media (min-width: 1440px) {
-    #case-study-slides > div .my-slider div {
-      height: 75vh; } }
-  #case-study-slides > div .my-slider div img {
-    object-fit: cover;
-    object-position: center;
-    height: 100%;
-    width: 100%; }
+#case-study-slides > div .my-slider {
+  background-color: #141A02; }
+  #case-study-slides > div .my-slider div {
+    height: 50vh; }
+    @media (min-width: 768px) {
+      #case-study-slides > div .my-slider div {
+        height: 60vh; } }
+    @media (min-width: 1025px) {
+      #case-study-slides > div .my-slider div {
+        height: 70vh; } }
+    @media (min-width: 1440px) {
+      #case-study-slides > div .my-slider div {
+        height: 75vh; } }
+    #case-study-slides > div .my-slider div img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%; }
 
 /* =============
     Case-Study-About
@@ -1068,17 +1069,18 @@ footer {
   #elephant-name h3 {
     color: rgba(239, 255, 223, 0.75);
     position: absolute;
-    right: -340px;
-    top: -120px; }
+    right: 0px;
+    top: -120px;
+    letter-spacing: 0px; }
     @media (min-width: 768px) {
       #elephant-name h3 {
-        right: -60px;
+        letter-spacing: 10px;
         top: -150px; } }
     @media (min-width: 1025px) {
       #elephant-name h3 {
-        right: -70px;
+        letter-spacing: 20px;
         top: -160px; } }
     @media (min-width: 1440px) {
       #elephant-name h3 {
-        right: -70px;
+        letter-spacing: 30px;
         top: -200px; } }

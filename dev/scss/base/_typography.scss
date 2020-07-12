@@ -5,12 +5,12 @@
 // font-family: 'Changa', sans-serif;
 // font-family: 'Muli', sans-serif;
 
-p,h1,h2,h3,h4,h5,h6{
+p,h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
 }
 
-.title{
+.title {
     h1 {
         color: $orange;
         font-family: 'Changa', sans-serif;
@@ -32,7 +32,7 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 
-.subtitle{
+.subtitle {
     h2 {
         color: $brown;
         font-family: 'Catamaran', sans-serif;
@@ -56,7 +56,7 @@ p,h1,h2,h3,h4,h5,h6{
     }
 }
 
-.body{
+.body {
     p {
         color: $beige;
         font-family: 'Milu', sans-serif;
@@ -78,13 +78,9 @@ p,h1,h2,h3,h4,h5,h6{
             font-size: rem-calc(22);
         }
     }
-
-    // p:first-child{
-    //     padding-bottom: 10px;
-    // }
 }
 
-.large-type{
+.large-type {
     h3 {
         font-family: 'Changa', sans-serif;
         font-size: rem-calc(100);

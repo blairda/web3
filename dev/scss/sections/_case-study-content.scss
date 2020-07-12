@@ -29,34 +29,34 @@
 /* =============
     Case-Study-Slides
 ============= */
-#case-study-slides{
-    >div{
-        .my-slider{
+#case-study-slides {
+    >div {
+        .my-slider {
             background-color: $green;
-            div{
+
+            div {
                 height: 50vh;
 
-                @include md{
+                @include md {
                     height: 60vh;
                 }
 
-                @include lg{
+                @include lg {
                     height: 70vh;
                 }
 
-                @include xl{
-                    height: 75vh;
+                @include xl {
+                    height: 80vh;
                 }
 
-                img{
+                img {
+                    height: 100%;
                     object-fit: cover;
                     object-position: center;
-                    height: 100%;
                     width: 100%;
                 }
             }
         }
-
     }
 }
 
@@ -87,9 +87,6 @@
                             font-style: italic;
                             font-weight: 800;
                         }
-
-                        // span:nth-child(2) {
-                        //     font-weight: 400;
                     }
                 }
             }
@@ -123,10 +120,10 @@
 
     h3 {
         color: rgba($color: $light-green, $alpha: 0.75);
+        letter-spacing: 0px;
         position: absolute;
         right: 0px;
         top: -120px;
-        letter-spacing: 0px;
 
         @include md {
             letter-spacing: 10px;

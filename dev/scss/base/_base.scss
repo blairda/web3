@@ -69,10 +69,6 @@ a:visited {
     margin-bottom: 40px;
 
     @include md {
-        margin-bottom: 50px;
-    }
-
-    @include md {
         margin-bottom: 60px;
     }
 }

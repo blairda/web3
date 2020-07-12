@@ -35,7 +35,7 @@
                 margin-top: 10%;
             }
 
-            h1{
+            h1 {
                 padding-bottom: 0;
             }
 
@@ -81,10 +81,6 @@
         #intro-text {
             grid-area: text;
             padding: 5% 0%;
-
-            @include md {
-                // padding-left: 5%;
-            }
 
             h2 {
                 color: $orange;
@@ -172,8 +168,8 @@
 
     h3 {
         color: rgba($color: $light-green, $alpha: 0.75);
-        position: absolute;
         letter-spacing: 30px;
+        position: absolute;
         right: 0px;
         top: -60px;
 
@@ -304,11 +300,10 @@
 
     h3 {
         color: rgba($color: $light-brown, $alpha: 0.75);
-        letter-spacing: 15px;
-        position: absolute;
         left: 0px;
-        top: -60px;
         letter-spacing: 10px;
+        position: absolute;
+        top: -60px;
 
         @include md {
             letter-spacing: 20px;
@@ -441,10 +436,10 @@
 
     h3 {
         color: rgba($color: $light-blue, $alpha: 0.75);
+        letter-spacing: 30px;
         position: absolute;
         right: 0px;
         top: -60px;
-        letter-spacing: 30px;
 
         @include md {
             letter-spacing: 50px;

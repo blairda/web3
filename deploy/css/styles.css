@@ -484,6 +484,12 @@ textarea {
 .tns-nav > .tns-nav-active {
   background: #E18A37; }
 
+.referral {
+  display: none !important; }
+
+.juicer-ad {
+  display: none !important; }
+
 /* =============
     Header
 ============= */
@@ -1076,3 +1082,19 @@ footer {
       #elephant-name h3 {
         letter-spacing: 30px;
         top: -200px; } }
+#connect-intro {
+  background-color: #141A02;
+  padding-bottom: 5%; }
+  #connect-intro div {
+    padding: 40px 0; }
+    @media (min-width: 1025px) {
+      #connect-intro div {
+        padding: 40px 10%; } }
+    #connect-intro div section h1 {
+      padding-bottom: 10px;
+      text-align: center; }
+    #connect-intro div article p {
+      text-align: center; }
+
+#connect-content {
+  background-color: #141A02; }

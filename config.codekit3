@@ -17,6 +17,14 @@
 		"oAP": "/deploy/case-study.html",
 		"oF": 0
 		},
+	"/deploy/connect.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/connect.html",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -248,12 +256,44 @@
 		"oAP": "/deploy/case-study.html",
 		"oF": 2
 		},
+	"/dev/connect.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/connect.html",
+		"oF": 2
+		},
+	"/dev/contact.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/contact.html",
+		"oF": 2
+		},
 	"/dev/content/case-study-content.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/case-study-content.html",
+		"oF": 0
+		},
+	"/dev/content/connect-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/connect-content.html",
+		"oF": 0
+		},
+	"/dev/content/contact-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/contact-content.html",
 		"oF": 0
 		},
 	"/dev/content/gallery-content.kit": {
@@ -431,6 +471,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/components/_juicer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_juicer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/components/_navigation.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -518,6 +571,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_case-study-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_connect-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_connect-content.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -33,7 +33,24 @@
             </section>
         </div>
     </header>
-    
+    <section class="grid-container" id="contact-intro">
+            <div>
+                <section class="title">
+                    <h1>Contact</h1>
+                </section>
+                <article class="body">
+                    <p>Find an animal sanctuary or wildlife foundation near you:</p>
+                    <p>African Dawn Wildlife Sanctuary</p>
+                    <p>Lot 13, Strandfontein, Thornhill, 6375, South Africa</p>
+                </article>
+            </div>
+        </section>
+        
+        <section class="grid-container" id="contact-map">
+            <div>
+                <div id="map"></div>
+            </div>
+        </section>
     <footer class="grid-container">
                 <div>
                     <img src="img/header/logo.svg" alt="site logo">
@@ -46,17 +63,42 @@
                     </ul>
                 </div>
             </footer>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {
+                lat: -25.344,
+                lng: 131.036
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrgc38FmWsOp9oGyoXorMzh62whWUmZk0&callback=initMap">
+    </script>
+
         <!-- jQuery -->
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                    <!-- Greensock -->
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-                    <!-- FancyBox -->
-                    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-                    <!-- TinySlider -->
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-                
-                
-                    <script src="js/scripts-min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Greensock -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+        <!-- FancyBox -->
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <!-- TinySlider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    
+    
+        <script src="js/scripts-min.js"></script>
 </body>
 
 </html>

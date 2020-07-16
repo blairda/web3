@@ -3,7 +3,6 @@
 ============= */
 #contact-intro {
     background-color: $green;
-    padding-bottom: 2%;
 
     div {
         padding: 40px 0;
@@ -30,26 +29,126 @@
 /* =============
     Contact-Map
 ============= */
-#contact-map{
+#contact-map {
     background-color: $green;
     padding-bottom: 5%;
 
-    #map{
-        width: 100%;
-        height: 300px;
+    #map {
         background-color: $green;
+        height: 300px;
+        width: 100%;
 
-        @include md{
+        @include md {
             height: 400px;
         }
 
-        @include lg{
+        @include lg {
             height: 500px;
         }
 
-        @include xl{
+        @include xl {
             height: 600px;
         }
     }
+}
 
+/* =============
+    Contact-Form-Title
+============= */
+#contact-form-title {
+    background-color: $green;
+
+    div {
+        article {
+            padding-bottom: 3%;
+
+            h2 {
+                color: $orange;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* =============
+    Contact-Form
+============= */
+#contact-form {
+    background-color: $green;
+
+    @include md {
+        display: grid;
+        grid-template-areas: ". form .";
+        grid-template-columns: auto 65% auto;
+    }
+
+    >div {
+        @include md {
+            grid-area: form;
+        }
+
+        #form-container {
+            form {
+                display: grid;
+                gap: 24px;
+                padding-bottom: 8%;
+
+                @include md {
+                    grid-template-areas: "first last"
+                        "email email"
+                        ". join";
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                section {
+                    background-color: $beige;
+                    border: solid 2px $yellow;
+                    border-radius: 0px;
+                    padding: 0 2%;
+                    width: 96%;
+
+                    input {
+                        border: none;
+                        font-family: 'Muli', sans-serif;
+                        padding: 2% 0;
+                        width: 100%;
+                    }
+
+                    textarea {
+                        border: none;
+                        padding: 0;
+                        width: 100%;
+                    }
+                }
+
+                section:nth-child(1) {
+                    @include md {
+                        grid-area: first;
+                    }
+                }
+
+                section:nth-child(2) {
+                    @include md {
+                        grid-area: last;
+                    }
+                }
+
+                section:nth-child(3) {
+                    @include md {
+                        grid-area: email;
+                    }
+                }
+
+                section:nth-child(4) {
+                    background-color: transparent;
+                    border: none;
+
+                    @include md {
+                        grid-area: join;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
 }

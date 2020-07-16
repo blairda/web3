@@ -1,3 +1,26 @@
 /* =============
     Buttons
 ============= */
+.join-button{
+    background-color: $orange;
+    border: solid 2px $yellow;
+    padding: 2% 5%;
+    min-width: 60px;
+    font-family: 'Changa', sans-serif;
+    color: $green;
+    font-size: rem-calc(20);
+
+    @include md{
+        font-size: rem-calc(24);
+        min-width: 80px;
+    }
+
+    @include lg{
+        font-size: rem-calc(32);
+        min-width: 100px;
+    }
+}
+
+button{
+    transition: 0.25s;
+ }

@@ -23,27 +23,29 @@
                 mapTypeId: 'hybrid',
 
                 // hide school
-                hide: [{
-                    featureType: "poi.school",
-                    stylers: [{
-                        visibility: "off"
-                    }]
-                }],
+                // hide: [{
+                //     featureType: "poi.school",
+                //     stylers: [{
+                //         visibility: "off"
+                //     }]
+                // }],
 
                 styles: [
-                    // change to dark brown geometry, brown text stroke, orange text fill
+                    // change to dark brown geometry
                     {
                         elementType: 'geometry',
                         stylers: [{
                             color: '#150700'
                         }]
                     },
+                     // change to brown text stroke
                     {
                         elementType: 'labels.text.stroke',
                         stylers: [{
                             color: '#3F2311'
                         }]
                     },
+                    // change to orange text fill
                     {
                         elementType: 'labels.text.fill',
                         stylers: [{
@@ -98,6 +100,15 @@
                         elementType: 'labels.text.fill',
                         stylers: [{
                             color: '#9ca5b3'
+                        }]
+                    },
+                    {
+                        // hide school
+                        featureType: 'poi.school',
+                        // elementType: 'labels.text.fill',
+                        stylers: [{
+                            // color: '#9ca5b3'
+                            visibility: "off"
                         }]
                     },
                     {
@@ -184,15 +195,15 @@
             }
 
             // hide school
-            var styles = {
-                default: null,
-                hide: [{
-                    featureType: "poi.school",
-                    stylers: [{
-                        visibility: "off"
-                    }]
-                }]
-            };
+            // var styles = {
+            //     default: null,
+            //     hide: [{
+            //         featureType: "poi.school",
+            //         stylers: [{
+            //             visibility: "off"
+            //         }]
+            //     }]
+            // };
         }
     </script>
     <script async defer

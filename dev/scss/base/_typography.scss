@@ -47,7 +47,7 @@ p,h1,h2,h3,h4,h5,h6 {
 
         @include lg {
             font-size: rem-calc(36);
-            line-height: rem-calc(60);
+            line-height: rem-calc(50);
         }
 
         @include xl {
@@ -60,8 +60,8 @@ p,h1,h2,h3,h4,h5,h6 {
     p {
         color: $beige;
         font-family: 'Milu', sans-serif;
-        font-size: rem-calc(16);
-        line-height: rem-calc(20);
+        font-size: rem-calc(15);
+        line-height: rem-calc(18);
         padding-bottom: 10px;
 
         @include md {

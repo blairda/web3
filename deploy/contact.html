@@ -51,6 +51,39 @@
                 <div id="map"></div>
             </div>
         </section>
+        
+        <section class="grid-container" id="contact-form-title">
+            <div>
+                <article class="subtitle">
+                    <h2>Subscribe to get the latest news</h2>
+                    <h2>on the endangered animals of Africa:</h2>
+                </article>
+            </div>
+        </section>
+        
+        <section class="grid-container" id="contact-form">
+            <div>
+                <section id="form-container">
+                    <form action="https://formspree.io/mzbjkypv" method="POST">
+                        <section>
+                            <input type="text" placeholder="First Name" name="First Name">
+                        </section>
+        
+                        <section>
+                            <input type="text" placeholder="Last Name" name="Last Name">
+                        </section>
+        
+                        <section>
+                            <input type="email" placeholder="Email Address" name="Email">
+                        </section>
+        
+                        <section>
+                            <button class="join-button" type="submit" value="Send">Join</button>
+                        </section>
+                    </form>
+                </section>
+            </div>
+        </section>
     <footer class="grid-container">
                 <div>
                     <img src="img/header/logo.svg" alt="site logo">
@@ -78,27 +111,29 @@
                 mapTypeId: 'hybrid',
 
                 // hide school
-                hide: [{
-                    featureType: "poi.school",
-                    stylers: [{
-                        visibility: "off"
-                    }]
-                }],
+                // hide: [{
+                //     featureType: "poi.school",
+                //     stylers: [{
+                //         visibility: "off"
+                //     }]
+                // }],
 
                 styles: [
-                    // change to dark brown geometry, brown text stroke, orange text fill
+                    // change to dark brown geometry
                     {
                         elementType: 'geometry',
                         stylers: [{
                             color: '#150700'
                         }]
                     },
+                     // change to brown text stroke
                     {
                         elementType: 'labels.text.stroke',
                         stylers: [{
                             color: '#3F2311'
                         }]
                     },
+                    // change to orange text fill
                     {
                         elementType: 'labels.text.fill',
                         stylers: [{
@@ -153,6 +188,15 @@
                         elementType: 'labels.text.fill',
                         stylers: [{
                             color: '#9ca5b3'
+                        }]
+                    },
+                    {
+                        // hide school
+                        featureType: 'poi.school',
+                        // elementType: 'labels.text.fill',
+                        stylers: [{
+                            // color: '#9ca5b3'
+                            visibility: "off"
                         }]
                     },
                     {
@@ -239,15 +283,15 @@
             }
 
             // hide school
-            var styles = {
-                default: null,
-                hide: [{
-                    featureType: "poi.school",
-                    stylers: [{
-                        visibility: "off"
-                    }]
-                }]
-            };
+            // var styles = {
+            //     default: null,
+            //     hide: [{
+            //         featureType: "poi.school",
+            //         stylers: [{
+            //             visibility: "off"
+            //         }]
+            //     }]
+            // };
         }
     </script>
     <script async defer

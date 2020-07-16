@@ -401,15 +401,15 @@ p, h1, h2, h3, h4, h5, h6 {
   @media (min-width: 1025px) {
     .subtitle h2 {
       font-size: 2.25rem;
-      line-height: 3.75rem; } }
+      line-height: 3.125rem; } }
   @media (min-width: 1440px) {
     .subtitle h2 {
       font-size: 2.5rem; } }
 .body p {
   color: #FFFADF;
   font-family: 'Milu', sans-serif;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   padding-bottom: 10px; }
   @media (min-width: 768px) {
     .body p {
@@ -438,6 +438,25 @@ p, h1, h2, h3, h4, h5, h6 {
 /* =============
     Buttons
 ============= */
+.join-button {
+  background-color: #E18A37;
+  border: solid 2px #D2AF36;
+  padding: 2% 5%;
+  min-width: 60px;
+  font-family: 'Changa', sans-serif;
+  color: #141A02;
+  font-size: 1.25rem; }
+  @media (min-width: 768px) {
+    .join-button {
+      font-size: 1.5rem;
+      min-width: 80px; } }
+  @media (min-width: 1025px) {
+    .join-button {
+      font-size: 2rem;
+      min-width: 100px; } }
+button {
+  transition: 0.25s; }
+
 /* =============
     Forms
 ============= */
@@ -1106,8 +1125,7 @@ footer {
     Contact
 ============= */
 #contact-intro {
-  background-color: #141A02;
-  padding-bottom: 2%; }
+  background-color: #141A02; }
   #contact-intro div {
     padding: 40px 0; }
     @media (min-width: 1025px) {
@@ -1126,9 +1144,9 @@ footer {
   background-color: #141A02;
   padding-bottom: 5%; }
   #contact-map #map {
-    width: 100%;
+    background-color: #141A02;
     height: 300px;
-    background-color: #141A02; }
+    width: 100%; }
     @media (min-width: 768px) {
       #contact-map #map {
         height: 400px; } }
@@ -1138,3 +1156,66 @@ footer {
     @media (min-width: 1440px) {
       #contact-map #map {
         height: 600px; } }
+/* =============
+    Contact-Form-Title
+============= */
+#contact-form-title {
+  background-color: #141A02; }
+  #contact-form-title div article {
+    padding-bottom: 3%; }
+    #contact-form-title div article h2 {
+      color: #E18A37;
+      text-align: center; }
+
+/* =============
+    Contact-Form
+============= */
+#contact-form {
+  background-color: #141A02; }
+  @media (min-width: 768px) {
+    #contact-form {
+      display: grid;
+      grid-template-areas: ". form .";
+      grid-template-columns: auto 65% auto; } }
+  @media (min-width: 768px) {
+    #contact-form > div {
+      grid-area: form; } }
+  #contact-form > div #form-container form {
+    display: grid;
+    gap: 24px;
+    padding-bottom: 8%; }
+    @media (min-width: 768px) {
+      #contact-form > div #form-container form {
+        grid-template-areas: "first last" "email email" ". join";
+        grid-template-columns: repeat(2, 1fr); } }
+    #contact-form > div #form-container form section {
+      background-color: #FFFADF;
+      border: solid 2px #D2AF36;
+      border-radius: 0px;
+      padding: 0 2%;
+      width: 96%; }
+      #contact-form > div #form-container form section input {
+        border: none;
+        font-family: 'Muli', sans-serif;
+        padding: 2% 0;
+        width: 100%; }
+      #contact-form > div #form-container form section textarea {
+        border: none;
+        padding: 0;
+        width: 100%; }
+    @media (min-width: 768px) {
+      #contact-form > div #form-container form section:nth-child(1) {
+        grid-area: first; } }
+    @media (min-width: 768px) {
+      #contact-form > div #form-container form section:nth-child(2) {
+        grid-area: last; } }
+    @media (min-width: 768px) {
+      #contact-form > div #form-container form section:nth-child(3) {
+        grid-area: email; } }
+    #contact-form > div #form-container form section:nth-child(4) {
+      background-color: transparent;
+      border: none; }
+      @media (min-width: 768px) {
+        #contact-form > div #form-container form section:nth-child(4) {
+          grid-area: join;
+          text-align: right; } }

@@ -475,6 +475,64 @@ textarea {
 /* =============
     Navigation
 ============= */
+.hide-nav-buttons {
+  display: none; }
+
+.show-nav-buttons {
+  display: block !important; }
+
+nav {
+  background-color: #141A02;
+  bottom: 0;
+  display: grid;
+  height: 100vh;
+  left: 0;
+  place-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 90; }
+  nav ul li button, nav ul li a:link, nav ul li a:visited {
+    background-color: transparent;
+    border: none;
+    color: #E18A37;
+    display: inline-block;
+    font-family: 'Changa', sans-serif;
+    font-size: 1.5rem;
+    padding: 15px 0;
+    text-align: left;
+    transition: 0.25s;
+    width: 100%; }
+    @media (min-width: 768px) {
+      nav ul li button, nav ul li a:link, nav ul li a:visited {
+        font-size: 2.5rem; } }
+    @media (min-width: 1025px) {
+      nav ul li button, nav ul li a:link, nav ul li a:visited {
+        font-size: 3.125rem; } }
+    @media (min-width: 1440px) {
+      nav ul li button, nav ul li a:link, nav ul li a:visited {
+        font-size: 3.75rem; } }
+    nav ul li button i, nav ul li a:link i, nav ul li a:visited i {
+      color: #E18A37;
+      font-size: 1.125rem;
+      margin-right: 10px; }
+      @media (min-width: 768px) {
+        nav ul li button i, nav ul li a:link i, nav ul li a:visited i {
+          font-size: 1.625rem; } }
+      @media (min-width: 1025px) {
+        nav ul li button i, nav ul li a:link i, nav ul li a:visited i {
+          font-size: 2rem;
+          margin-right: 15px; } }
+      @media (min-width: 1440px) {
+        nav ul li button i, nav ul li a:link i, nav ul li a:visited i {
+          font-size: 2.5rem;
+          margin-right: 20px; } }
+    nav ul li button:hover, nav ul li button:active, nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+      color: #D2AF36; }
+      nav ul li button:hover i, nav ul li button:active i, nav ul li a:link:hover i, nav ul li a:link:active i, nav ul li a:visited:hover i, nav ul li a:visited:active i {
+        color: #D2AF36; }
+
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
   color: #D2AF36; }
 
@@ -513,7 +571,12 @@ textarea {
     Header
 ============= */
 header {
-  background-color: #3F2311; }
+  background-color: #3F2311;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100; }
   header div {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
@@ -594,7 +657,7 @@ footer {
           footer > div ul li a:link:hover, footer > div ul li a:link:active,
           footer > div ul li a:visited:hover,
           footer > div ul li a:visited:active {
-            color: #fff; }
+            color: #FFFADF; }
           @media (min-width: 768px) {
             footer > div ul li a:link,
             footer > div ul li a:visited {

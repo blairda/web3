@@ -1,5 +1,5 @@
 // console.log("tinySlider here");
-if ($(this).hasClass("my-slider")) {
+// if ($(this).hasClass("my-slider")) {
 tns(
     {
     container: '.my-slider',
@@ -29,4 +29,4 @@ tns(
         }
     }
 });
-}
+// }

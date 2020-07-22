@@ -27,6 +27,17 @@
 }
 
 #gallery {
+    padding-bottom: 15%;
+    background-color: $green;
+
+    @include md{
+        padding-bottom: 8%;
+    }
+
+    @include md{
+        padding-bottom: 5%;
+    }
+
     div {
         ul {
             display: grid;

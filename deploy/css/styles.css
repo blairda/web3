@@ -484,7 +484,7 @@ textarea {
 #main-nav {
   background-color: #141A02;
   bottom: 0;
-  display: grid;
+  display: none;
   height: 100vh;
   left: 0;
   place-items: center;
@@ -1033,46 +1033,55 @@ footer {
     #gallery-intro div article p {
       text-align: center; }
 
-#gallery div ul {
-  display: grid;
-  grid-template-areas: "one" "two" "three";
-  grid-template-rows: repeat(3, 320px); }
+#gallery {
+  padding-bottom: 15%;
+  background-color: #141A02; }
   @media (min-width: 768px) {
-    #gallery div ul {
-      grid-template-areas: "one two" "three four";
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr); } }
-  @media (min-width: 1025px) {
-    #gallery div ul {
-      grid-template-areas: "one one two" "three four four" "five five six";
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 340px); } }
-  @media (min-width: 1440px) {
-    #gallery div ul {
-      grid-template-areas: "one one two three" "four four five five" "six seven seven eight";
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 400px); } }
-  #gallery div ul li img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    width: 100%; }
-  #gallery div ul li:nth-child(1) {
-    grid-area: one; }
-  #gallery div ul li:nth-child(2) {
-    grid-area: two; }
-  #gallery div ul li:nth-child(3) {
-    grid-area: three; }
-  #gallery div ul li:nth-child(4) {
-    grid-area: four; }
-  #gallery div ul li:nth-child(5) {
-    grid-area: five; }
-  #gallery div ul li:nth-child(6) {
-    grid-area: six; }
-  #gallery div ul li:nth-child(7) {
-    grid-area: seven; }
-  #gallery div ul li:nth-child(8) {
-    grid-area: eight; }
+    #gallery {
+      padding-bottom: 8%; } }
+  @media (min-width: 768px) {
+    #gallery {
+      padding-bottom: 5%; } }
+  #gallery div ul {
+    display: grid;
+    grid-template-areas: "one" "two" "three";
+    grid-template-rows: repeat(3, 320px); }
+    @media (min-width: 768px) {
+      #gallery div ul {
+        grid-template-areas: "one two" "three four";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); } }
+    @media (min-width: 1025px) {
+      #gallery div ul {
+        grid-template-areas: "one one two" "three four four" "five five six";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 340px); } }
+    @media (min-width: 1440px) {
+      #gallery div ul {
+        grid-template-areas: "one one two three" "four four five five" "six seven seven eight";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 400px); } }
+    #gallery div ul li img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      width: 100%; }
+    #gallery div ul li:nth-child(1) {
+      grid-area: one; }
+    #gallery div ul li:nth-child(2) {
+      grid-area: two; }
+    #gallery div ul li:nth-child(3) {
+      grid-area: three; }
+    #gallery div ul li:nth-child(4) {
+      grid-area: four; }
+    #gallery div ul li:nth-child(5) {
+      grid-area: five; }
+    #gallery div ul li:nth-child(6) {
+      grid-area: six; }
+    #gallery div ul li:nth-child(7) {
+      grid-area: seven; }
+    #gallery div ul li:nth-child(8) {
+      grid-area: eight; }
 
 /* =============
     Case-Study-Intro

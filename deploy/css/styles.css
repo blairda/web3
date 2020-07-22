@@ -574,10 +574,10 @@ textarea {
 ============= */
 header {
   background-color: #3F2311;
-  position: fixed;
-  width: 100%;
-  top: 0;
   left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 100; }
   header div {
     display: grid;
@@ -591,10 +591,16 @@ header {
             width: initial; } }
   header #burger-container {
     align-items: center;
-    color: #D2AF36;
     display: flex;
-    font-size: 2rem;
     justify-content: flex-end; }
+    header #burger-container #burger {
+      cursor: pointer;
+      transition: 0.25s; }
+      header #burger-container #burger #bars {
+        fill: #D2AF36;
+        transition: 0.25s; }
+      header #burger-container #burger:hover #bars {
+        fill: #E18A37; }
 
 /* =============
     Footer

@@ -3,10 +3,10 @@
 ============= */
 header {
     background-color: $brown;
-    position: fixed;
-    width: 100%;
-    top: 0;
     left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 100;
 
     div {
@@ -28,9 +28,23 @@ header {
 
     #burger-container {
         align-items: center;
-        color: $yellow;
         display: flex;
-        font-size: rem-calc(32);
         justify-content: flex-end;
+
+        #burger {
+            cursor: pointer;
+            transition: 0.25s;
+
+            #bars {
+                fill: $yellow;
+                transition: 0.25s;
+            }
+
+            &:hover {
+                #bars {
+                    fill: $orange;
+                }
+            }
+        }
     }
 }

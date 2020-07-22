@@ -481,7 +481,7 @@ textarea {
 .show-nav-buttons {
   display: block !important; }
 
-nav {
+#main-nav {
   background-color: #141A02;
   bottom: 0;
   display: grid;
@@ -493,7 +493,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 90; }
-  nav ul li button, nav ul li a:link, nav ul li a:visited {
+  #main-nav ul li button, #main-nav ul li a:link, #main-nav ul li a:visited {
     background-color: transparent;
     border: none;
     color: #E18A37;
@@ -505,32 +505,32 @@ nav {
     transition: 0.25s;
     width: 100%; }
     @media (min-width: 768px) {
-      nav ul li button, nav ul li a:link, nav ul li a:visited {
+      #main-nav ul li button, #main-nav ul li a:link, #main-nav ul li a:visited {
         font-size: 2.5rem; } }
     @media (min-width: 1025px) {
-      nav ul li button, nav ul li a:link, nav ul li a:visited {
+      #main-nav ul li button, #main-nav ul li a:link, #main-nav ul li a:visited {
         font-size: 3.125rem; } }
     @media (min-width: 1440px) {
-      nav ul li button, nav ul li a:link, nav ul li a:visited {
+      #main-nav ul li button, #main-nav ul li a:link, #main-nav ul li a:visited {
         font-size: 3.75rem; } }
-    nav ul li button i, nav ul li a:link i, nav ul li a:visited i {
+    #main-nav ul li button i, #main-nav ul li a:link i, #main-nav ul li a:visited i {
       color: #E18A37;
       font-size: 1.125rem;
       margin-right: 10px; }
       @media (min-width: 768px) {
-        nav ul li button i, nav ul li a:link i, nav ul li a:visited i {
+        #main-nav ul li button i, #main-nav ul li a:link i, #main-nav ul li a:visited i {
           font-size: 1.625rem; } }
       @media (min-width: 1025px) {
-        nav ul li button i, nav ul li a:link i, nav ul li a:visited i {
+        #main-nav ul li button i, #main-nav ul li a:link i, #main-nav ul li a:visited i {
           font-size: 2rem;
           margin-right: 15px; } }
       @media (min-width: 1440px) {
-        nav ul li button i, nav ul li a:link i, nav ul li a:visited i {
+        #main-nav ul li button i, #main-nav ul li a:link i, #main-nav ul li a:visited i {
           font-size: 2.5rem;
           margin-right: 20px; } }
-    nav ul li button:hover, nav ul li button:active, nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+    #main-nav ul li button:hover, #main-nav ul li button:active, #main-nav ul li a:link:hover, #main-nav ul li a:link:active, #main-nav ul li a:visited:hover, #main-nav ul li a:visited:active {
       color: #D2AF36; }
-      nav ul li button:hover i, nav ul li button:active i, nav ul li a:link:hover i, nav ul li a:link:active i, nav ul li a:visited:hover i, nav ul li a:visited:active i {
+      #main-nav ul li button:hover i, #main-nav ul li button:active i, #main-nav ul li a:link:hover i, #main-nav ul li a:link:active i, #main-nav ul li a:visited:hover i, #main-nav ul li a:visited:active i {
         color: #D2AF36; }
 
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {

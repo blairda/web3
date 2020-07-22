@@ -25,7 +25,7 @@
     <header class="grid-container">
         <div>
             <section id="logo-container">
-                <img src="img/header/logo.svg" alt="site logo">
+                <a href="index.html"><img src="img/header/logo.svg" alt="site logo"></a>
             </section>
     
             <section id="burger-container">
@@ -33,69 +33,87 @@
             </section>
         </div>
     </header>
+
+    <nav id="main-nav">
+            <ul>
+                <li class=" hide-nav-buttons"><button><i class="fas fa-paw"></i>The Rhino</button></li>
+                <li class=" hide-nav-buttons"><button><i class="fas fa-cat"></i>The Leopard</button></li>
+                <li class=" hide-nav-buttons"><button><i class="fas fa-hippo"></i>The Hippo</button></li>
+        
+                <li class="show-nav-buttons hide-nav-buttons"><a href="index.html#index-card1"><i class="fas fa-paw"></i>The Rhino</a></li>
+                <li class="show-nav-buttons hide-nav-buttons"><a href="index.html#index-card2"><i class="fas fa-cat"></i>The Leopard</a></li>
+                <li class="show-nav-buttons hide-nav-buttons"><a href="index.html#index-card3"><i class="fas fa-hippo"></i>The Hippo</a></li>
+        
+                <li><a href="case-study.html"><i class="fas fa-globe-africa"></i></i>The Elephant</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i></i>Contact</a></li>
+                <li><a href="gallery.html"><i class="fas fa-camera"></i>Gallery</a></li>
+                <li><a href="connect.html"><i class="fas fa-share-alt"></i>Connect</a></li>
+            </ul>
+        </nav>
+
     <section class="grid-container" id="contact-intro">
-            <div>
-                <section class="title">
-                    <h1>Contact</h1>
-                </section>
-                <article class="body">
-                    <p>Find an animal sanctuary or wildlife foundation near you:</p>
-                    <p>African Dawn Wildlife Sanctuary</p>
-                    <p>Lot 13, Strandfontein, Thornhill, 6375, South Africa</p>
-                </article>
-            </div>
-        </section>
-        
-        <section class="grid-container" id="contact-map">
-            <div>
-                <div id="map"></div>
-            </div>
-        </section>
-        
-        <section class="grid-container" id="contact-form-title">
-            <div>
-                <article class="subtitle">
-                    <h2>Subscribe to get the latest news</h2>
-                    <h2>on the endangered animals of Africa:</h2>
-                </article>
-            </div>
-        </section>
-        
-        <section class="grid-container" id="contact-form">
-            <div>
-                <section id="form-container">
-                    <form action="https://formspree.io/mzbjkypv" method="POST">
-                        <section>
-                            <input type="text" placeholder="First Name" name="First Name">
-                        </section>
-        
-                        <section>
-                            <input type="text" placeholder="Last Name" name="Last Name">
-                        </section>
-        
-                        <section>
-                            <input type="email" placeholder="Email Address" name="Email">
-                        </section>
-        
-                        <section>
-                            <button class="join-button" type="submit" value="Send">Join</button>
-                        </section>
-                    </form>
-                </section>
-            </div>
-        </section>
+        <div>
+            <section class="title">
+                <h1>Contact</h1>
+            </section>
+            <article class="body">
+                <p>Find an animal sanctuary or wildlife foundation near you:</p>
+                <p>African Dawn Wildlife Sanctuary</p>
+                <p>Lot 13, Strandfontein, Thornhill, 6375, South Africa</p>
+            </article>
+        </div>
+    </section>
+    
+    <section class="grid-container" id="contact-map">
+        <div>
+            <div id="map"></div>
+        </div>
+    </section>
+    
+    <section class="grid-container" id="contact-form-title">
+        <div>
+            <article class="subtitle">
+                <h2>Subscribe to get the latest news</h2>
+                <h2>on the endangered animals of Africa:</h2>
+            </article>
+        </div>
+    </section>
+    
+    <section class="grid-container" id="contact-form">
+        <div>
+            <section id="form-container">
+                <form action="https://formspree.io/mzbjkypv" method="POST">
+                    <section>
+                        <input type="text" placeholder="First Name" name="First Name">
+                    </section>
+    
+                    <section>
+                        <input type="text" placeholder="Last Name" name="Last Name">
+                    </section>
+    
+                    <section>
+                        <input type="email" placeholder="Email Address" name="Email">
+                    </section>
+    
+                    <section>
+                        <button class="join-button" type="submit" value="Send">Join</button>
+                    </section>
+                </form>
+            </section>
+        </div>
+    </section>
     <footer class="grid-container">
-                <div>
-                    <img src="img/header/logo.svg" alt="site logo">
-                    <h1>Endangered Animals of Africa</h1>
-                    <ul>
-                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </footer>
+            <div>
+                <img src="img/header/logo.svg" alt="site logo">
+                <h1>Endangered Animals of Africa</h1>
+                <ul>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </footer>
 
     <script>
         function initMap() {

@@ -25,7 +25,7 @@
     <header class="grid-container">
         <div>
             <section id="logo-container">
-                <img src="img/header/logo.svg" alt="site logo">
+                <a href="index.html"><img src="img/header/logo.svg" alt="site logo"></a>
             </section>
     
             <section id="burger-container">
@@ -33,57 +33,75 @@
             </section>
         </div>
     </header>
-    <section class="grid-container" id="gallery-intro">
-            <div>
-                <section class="title">
-                    <h1>Endangered Species</h1>
-                </section>
-                <article class="body">
-                    <p>Species populations are loosely grouped into six major categories. The four categories of endangered
-                        species are vulnerable, endangered, critically endangered, and extinct in the wild.</p>
-                    <p>Thousands of animal species near the later stages of extinction each year. Below are some
-                        of the most endangered species on the continent of Africa.</p>
-                </article>
-            </div>
-        </section>
+
+    <nav id="main-nav">
+            <ul>
+                <li class=" hide-nav-buttons"><button><i class="fas fa-paw"></i>The Rhino</button></li>
+                <li class=" hide-nav-buttons"><button><i class="fas fa-cat"></i>The Leopard</button></li>
+                <li class=" hide-nav-buttons"><button><i class="fas fa-hippo"></i>The Hippo</button></li>
         
-        <section id="gallery">
+                <li class="show-nav-buttons hide-nav-buttons"><a href="index.html#index-card1"><i class="fas fa-paw"></i>The Rhino</a></li>
+                <li class="show-nav-buttons hide-nav-buttons"><a href="index.html#index-card2"><i class="fas fa-cat"></i>The Leopard</a></li>
+                <li class="show-nav-buttons hide-nav-buttons"><a href="index.html#index-card3"><i class="fas fa-hippo"></i>The Hippo</a></li>
+        
+                <li><a href="case-study.html"><i class="fas fa-globe-africa"></i></i>The Elephant</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i></i>Contact</a></li>
+                <li><a href="gallery.html"><i class="fas fa-camera"></i>Gallery</a></li>
+                <li><a href="connect.html"><i class="fas fa-share-alt"></i>Connect</a></li>
+            </ul>
+        </nav>
+
+    <section class="grid-container" id="gallery-intro">
+        <div>
+            <section class="title">
+                <h1>Endangered Species</h1>
+            </section>
+            <article class="body">
+                <p>Species populations are loosely grouped into six major categories. The four categories of endangered
+                    species are vulnerable, endangered, critically endangered, and extinct in the wild.</p>
+                <p>Thousands of animal species near the later stages of extinction each year. Below are some
+                    of the most endangered species on the continent of Africa.</p>
+            </article>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <div>
+            <ul>
+                <li><a data-fancybox="gallery" href="img/gallery/1elephant.jpg"><img src="img/gallery/1elephant.jpg" alt="elephant"></a></li>
+                <li><a data-fancybox="gallery" href="img/gallery/2leopard.jpg"><img src="img/gallery/2leopard.jpg" alt="leopard"></a></li>
+                <li><a data-fancybox="gallery" href="img/gallery/3gorilla.jpg"><img src="img/gallery/3gorilla.jpg" alt="gorilla"></a></li>
+                <li class="show-for-md"><a data-fancybox="gallery" href="img/gallery/4zebra.jpg"><img src="img/gallery/4zebra.jpg" alt="zebra"></a></li>
+                <li class="show-for-lg"><a data-fancybox="gallery" href="img/gallery/5rhinos.jpg"><img src="img/gallery/5rhinos.jpg" alt="rhinos"></a></li>
+                <li class="show-for-lg"><a data-fancybox="gallery" href="img/gallery/6giraffes.jpg"><img src="img/gallery/6giraffes.jpg" alt="giraffes"></a></li>
+                <li class="show-for-xl"><a data-fancybox="gallery" href="img/gallery/7hippo.jpg"><img src="img/gallery/7hippo.jpg" alt="hippo"></a></li>
+                <li class="show-for-xl"><a data-fancybox="gallery" href="img/gallery/8rhino.jpg"><img src="img/gallery/8rhino.jpg" alt="rhino"></a></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="grid-container">
             <div>
+                <img src="img/header/logo.svg" alt="site logo">
+                <h1>Endangered Animals of Africa</h1>
                 <ul>
-                    <li><a data-fancybox="gallery" href="img/gallery/1elephant.jpg"><img src="img/gallery/1elephant.jpg" alt="elephant"></a></li>
-                    <li><a data-fancybox="gallery" href="img/gallery/2leopard.jpg"><img src="img/gallery/2leopard.jpg" alt="leopard"></a></li>
-                    <li><a data-fancybox="gallery" href="img/gallery/3gorilla.jpg"><img src="img/gallery/3gorilla.jpg" alt="gorilla"></a></li>
-                    <li class="show-for-md"><a data-fancybox="gallery" href="img/gallery/4zebra.jpg"><img src="img/gallery/4zebra.jpg" alt="zebra"></a></li>
-                    <li class="show-for-lg"><a data-fancybox="gallery" href="img/gallery/5rhinos.jpg"><img src="img/gallery/5rhinos.jpg" alt="rhinos"></a></li>
-                    <li class="show-for-lg"><a data-fancybox="gallery" href="img/gallery/6giraffes.jpg"><img src="img/gallery/6giraffes.jpg" alt="giraffes"></a></li>
-                    <li class="show-for-xl"><a data-fancybox="gallery" href="img/gallery/7hippo.jpg"><img src="img/gallery/7hippo.jpg" alt="hippo"></a></li>
-                    <li class="show-for-xl"><a data-fancybox="gallery" href="img/gallery/8rhino.jpg"><img src="img/gallery/8rhino.jpg" alt="rhino"></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
-        </section>
-    <footer class="grid-container">
-                <div>
-                    <img src="img/header/logo.svg" alt="site logo">
-                    <h1>Endangered Animals of Africa</h1>
-                    <ul>
-                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </footer>
+        </footer>
         <!-- jQuery -->
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                    <!-- Greensock -->
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-                    <!-- FancyBox -->
-                    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-                    <!-- TinySlider -->
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-                
-                
-                    <script src="js/scripts-min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <!-- Greensock -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+                <!-- FancyBox -->
+                <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+                <!-- TinySlider -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+            
+            
+                <script src="js/scripts-min.js"></script>
 </body>
 
 </html>

@@ -23,8 +23,9 @@
     z-index: 90;
 
     ul {
-        li {
+        margin-top: 15%;
 
+        li {
             button, a:link, a:visited {
                 background-color: transparent;
                 border: none;
@@ -33,7 +34,7 @@
                 font-family: 'Changa', sans-serif;
                 font-size: rem-calc(24);
                 padding: 15px 0;
-                text-align: left;
+                text-align: center;
                 transition: 0.25s;
                 width: 100%;
 

@@ -339,7 +339,7 @@
     div {
         display: grid;
         grid-template-areas: "fact2 exclamation2";
-        grid-template-columns: 90% auto;
+        grid-template-columns: 80% auto;
 
         #exclamation-mark2 {
             color: rgba($color: $yellow, $alpha: 0.75);

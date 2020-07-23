@@ -736,7 +736,8 @@ footer {
         grid-template-columns: 80% auto; } }
     #index-intro > div #intro-text {
       grid-area: text-intro;
-      padding: 5% 0%; }
+      padding: 5% 0%;
+      padding-right: 2%; }
       #index-intro > div #intro-text h2 {
         color: #E18A37;
         font-weight: 700; }

@@ -12,7 +12,7 @@
 #main-nav {
     background-color: $green;
     bottom: 0;
-    display: none;
+    display: grid;
     height: 100vh;
     left: 0;
     place-items: center;
@@ -23,7 +23,7 @@
     z-index: 90;
 
     ul {
-        margin-top: 15%;
+        margin-top: 5%;
 
         li {
             button, a:link, a:visited {
@@ -34,7 +34,7 @@
                 font-family: 'Changa', sans-serif;
                 font-size: rem-calc(24);
                 padding: 15px 0;
-                text-align: center;
+                text-align: left;
                 transition: 0.25s;
                 width: 100%;
 
@@ -71,7 +71,6 @@
                 }
 
                 &:hover, &:active {
-                    // background-color: $dark-brown;
                     color: $yellow;
 
                     i {

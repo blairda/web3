@@ -1,6 +1,17 @@
 var canYouSeeMenu = false;
 
+// gsap.set("#main-nav",{y:-300});
 
+var navHeight = $("#main-nav").outerHeight();
+// move main-nav off-screen, moving main-nav along y-axis
+gsap.set("#main-nav", {y: -navHeight})
+
+// how tall main-nav is from browser, use outerHeight to include any padding/margin
+// console.log($("#main-nav").outerHeight() + " = total height of main-nav");
+// console.log($("#main-nav").height() + " = height of main-nav");
+
+var mainNavTimeline = gsap.timeline({paused:true})
+mainNavTimeline.to("#main-nav", {duration:0.5, y:0})
 
 // function to handle showing/hiding of main-nav
 function hideShowMainNav(){
@@ -15,6 +26,8 @@ function hideShowMainNav(){
 
         // change burger into X
         animateBurger();
+        // slide down main-nav into view
+        mainNavTimeline.play();
 
 
     }else{
@@ -24,5 +37,9 @@ function hideShowMainNav(){
 
         // change X into burger
         animateBurger();
+
+        // slide up main-nav out of view
+        mainNavTimeline.reverse()
+        
     }
 }

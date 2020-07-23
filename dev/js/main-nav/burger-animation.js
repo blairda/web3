@@ -7,9 +7,9 @@ gsap.set(".bars",{transformOrigin:"center"});
 
 // reference to timeline variable above, animated object, animate property/ies *only 1 objectid/class per action
 // Ex: variablename.action("#objectid",{property,property}); optional add after },"timelinestampname")
-burgerAnimationTimeline.to("#middle-bar",{duration:burgerAnimationSpeed, alpha:0, fill: "#150700"}, "burgerStart")
-                        .to("#top-bar",{duration:burgerAnimationSpeed, rotation:45, y:11, fill: "#150700"}, "burgerStart")
-                        .to("#bottom-bar",{duration:burgerAnimationSpeed, rotation:-45, y:-15, fill: "#150700", onReverseComplete:resetBurgerBarsColor}, "burgerStart");
+burgerAnimationTimeline.to("#middle-bar",{duration:burgerAnimationSpeed, alpha:0, fill: "#E18A37"}, "burgerStart")
+                        .to("#top-bar",{duration:burgerAnimationSpeed, rotation:45, y:11, fill: "#E18A37"}, "burgerStart")
+                        .to("#bottom-bar",{duration:burgerAnimationSpeed, rotation:-45, y:-15, fill: "#E18A37", onReverseComplete:resetBurgerBarsColor}, "burgerStart");
 
 
 function animateBurger(){
@@ -28,5 +28,5 @@ function animateBurger(){
 
 // function to revert back to original yellow color when reversing from X to burger
 function resetBurgerBarsColor(){
-    gsap.to(".bars",{duration:0.33, fill: "#D2AF36"});
+    gsap.to(".bars",{duration:burgerAnimationSpeed, fill: "#D2AF36"});
 }

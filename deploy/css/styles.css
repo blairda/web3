@@ -484,7 +484,7 @@ textarea {
 #main-nav {
   background-color: #141A02;
   bottom: 0;
-  display: none;
+  display: grid;
   height: 100vh;
   left: 0;
   place-items: center;
@@ -494,7 +494,7 @@ textarea {
   width: 100%;
   z-index: 90; }
   #main-nav ul {
-    margin-top: 15%; }
+    margin-top: 5%; }
     #main-nav ul li button, #main-nav ul li a:link, #main-nav ul li a:visited {
       background-color: transparent;
       border: none;
@@ -503,7 +503,7 @@ textarea {
       font-family: 'Changa', sans-serif;
       font-size: 1.5rem;
       padding: 15px 0;
-      text-align: center;
+      text-align: left;
       transition: 0.25s;
       width: 100%; }
       @media (min-width: 768px) {

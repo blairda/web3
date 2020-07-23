@@ -684,7 +684,8 @@ footer {
   background-position: center;
   background-size: cover;
   height: 60vh;
-  position: relative; }
+  position: relative;
+  margin-top: 50px; }
   @media (min-width: 768px) {
     #index-hero {
       height: 70vh; } }
@@ -725,28 +726,28 @@ footer {
 ============= */
 #index-intro {
   background-color: #141A02; }
-  #index-intro div {
+  #index-intro > div {
     display: grid;
-    grid-template-areas: "question text";
+    grid-template-areas: "question text-intro";
     grid-template-columns: auto 85%; }
     @media (min-width: 768px) {
-      #index-intro div {
-        grid-template-areas: "text question";
+      #index-intro > div {
+        grid-template-areas: "text-intro question";
         grid-template-columns: 80% auto; } }
-    #index-intro div #intro-text {
-      grid-area: text;
+    #index-intro > div #intro-text {
+      grid-area: text-intro;
       padding: 5% 0%; }
-      #index-intro div #intro-text h2 {
+      #index-intro > div #intro-text h2 {
         color: #E18A37;
         font-weight: 700; }
-    #index-intro div #question-mark {
+    #index-intro > div #question-mark {
       align-items: top;
       color: rgba(210, 175, 54, 0.75);
       display: flex;
       grid-area: question;
       justify-content: center; }
       @media (min-width: 768px) {
-        #index-intro div #question-mark {
+        #index-intro > div #question-mark {
           display: grid;
           place-items: center; } }
 /* =============
@@ -791,6 +792,9 @@ footer {
       font-style: italic;
       font-weight: 800; }
 
+/* =============
+    Index-Card1-Name
+============= */
 #rhino-name {
   background-color: #141A02;
   position: relative; }
@@ -798,7 +802,7 @@ footer {
     color: rgba(239, 255, 223, 0.75);
     letter-spacing: 30px;
     position: absolute;
-    right: 0px;
+    left: 0px;
     top: -60px; }
     @media (min-width: 768px) {
       #rhino-name h3 {
@@ -818,24 +822,21 @@ footer {
 #index-fact1 {
   background-color: #141A02;
   padding-top: 30px; }
-  @media (min-width: 768px) {
-    #index-fact1 {
-      padding-top: 0; } }
   #index-fact1 div {
     display: grid;
-    grid-template-areas: "exclamation text";
+    grid-template-areas: "exclamation1 fact1";
     grid-template-columns: auto 90%; }
     #index-fact1 div #exclamation-mark1 {
       color: rgba(210, 175, 54, 0.75);
-      grid-area: exclamation; }
+      grid-area: exclamation1; }
     #index-fact1 div article {
-      grid-area: text; }
+      grid-area: fact1; }
       #index-fact1 div article h2 {
         color: #E18A37; }
         #index-fact1 div article h2 span {
           color: #D2AF36; }
       #index-fact1 div article h2:first-child {
-        padding-top: 12%; }
+        padding-top: 8%; }
       #index-fact1 div article h2:last-child {
         padding-bottom: 8%; }
         @media (min-width: 768px) {
@@ -881,13 +882,16 @@ footer {
       font-style: italic;
       font-weight: 800; }
 
+/* =============
+    Index-Card2-Name
+============= */
 #leopard-name {
   background-color: #141A02;
   position: relative; }
   #leopard-name h3 {
     color: rgba(240, 198, 142, 0.75);
     left: 0px;
-    letter-spacing: 10px;
+    letter-spacing: 3px;
     position: absolute;
     top: -60px; }
     @media (min-width: 768px) {
@@ -913,13 +917,13 @@ footer {
       padding-top: 0; } }
   #index-fact2 div {
     display: grid;
-    grid-template-areas: "text exclamation";
+    grid-template-areas: "fact2 exclamation2";
     grid-template-columns: 90% auto; }
     #index-fact2 div #exclamation-mark2 {
       color: rgba(210, 175, 54, 0.75);
-      grid-area: exclamation; }
+      grid-area: exclamation2; }
     #index-fact2 div article {
-      grid-area: text; }
+      grid-area: fact2; }
       #index-fact2 div article h2 {
         color: #E18A37;
         padding-right: 5%;
@@ -927,7 +931,7 @@ footer {
         #index-fact2 div article h2 span {
           color: #D2AF36; }
       #index-fact2 div article h2:first-child {
-        padding-top: 12%; }
+        padding-top: 8%; }
       #index-fact2 div article h2:last-child {
         padding-bottom: 8%; }
         @media (min-width: 768px) {
@@ -975,14 +979,17 @@ footer {
       font-style: italic;
       font-weight: 800; }
 
+/* =============
+    Index-Card3-Name
+============= */
 #hippo-name {
   background-color: #141A02;
   position: relative; }
   #hippo-name h3 {
     color: rgba(175, 187, 186, 0.75);
-    letter-spacing: 30px;
+    letter-spacing: 25px;
     position: absolute;
-    right: 0px;
+    left: 0px;
     top: -60px; }
     @media (min-width: 768px) {
       #hippo-name h3 {
@@ -1002,24 +1009,21 @@ footer {
 #index-fact3 {
   background-color: #141A02;
   padding-top: 30px; }
-  @media (min-width: 768px) {
-    #index-fact3 {
-      padding-top: 0; } }
   #index-fact3 div {
     display: grid;
-    grid-template-areas: "exclamation text";
+    grid-template-areas: "exclamation3 fact3";
     grid-template-columns: auto 90%; }
     #index-fact3 div #exclamation-mark3 {
       color: rgba(210, 175, 54, 0.75);
-      grid-area: exclamation; }
+      grid-area: exclamation3; }
     #index-fact3 div article {
-      grid-area: text; }
+      grid-area: fact3; }
       #index-fact3 div article h2 {
         color: #E18A37; }
         #index-fact3 div article h2 span {
           color: #D2AF36; }
       #index-fact3 div article h2:first-child {
-        padding-top: 12%; }
+        padding-top: 8%; }
       #index-fact3 div article h2:last-child {
         padding-bottom: 8%; }
         @media (min-width: 768px) {

@@ -7,6 +7,7 @@
     background-size: cover;
     height: 60vh;
     position: relative;
+    margin-top: 50px;
 
     @include md {
         height: 70vh;
@@ -68,18 +69,18 @@
 #index-intro {
     background-color: $green;
 
-    div {
+    >div {
         display: grid;
-        grid-template-areas: "question text";
+        grid-template-areas: "question text-intro";
         grid-template-columns: auto 85%;
 
         @include md {
-            grid-template-areas: "text question";
+            grid-template-areas: "text-intro question";
             grid-template-columns: 80% auto;
         }
 
         #intro-text {
-            grid-area: text;
+            grid-area: text-intro;
             padding: 5% 0%;
 
             h2 {
@@ -162,6 +163,9 @@
     }
 }
 
+/* =============
+    Index-Card1-Name
+============= */
 #rhino-name {
     background-color: $green;
     position: relative;
@@ -170,7 +174,7 @@
         color: rgba($color: $light-green, $alpha: 0.75);
         letter-spacing: 30px;
         position: absolute;
-        right: 0px;
+        left: 0px;
         top: -60px;
 
         @include md {
@@ -197,22 +201,18 @@
     background-color: $green;
     padding-top: 30px;
 
-    @include md {
-        padding-top: 0;
-    }
-
     div {
         display: grid;
-        grid-template-areas: "exclamation text";
+        grid-template-areas: "exclamation1 fact1";
         grid-template-columns: auto 90%;
 
         #exclamation-mark1 {
             color: rgba($color: $yellow, $alpha: 0.75);
-            grid-area: exclamation;
+            grid-area: exclamation1;
         }
 
         article {
-            grid-area: text;
+            grid-area: fact1;
 
             h2 {
                 color: $orange;
@@ -223,7 +223,7 @@
             }
 
             h2:first-child {
-                padding-top: 12%;
+                padding-top: 8%;
             }
 
             h2:last-child {
@@ -294,6 +294,9 @@
     }
 }
 
+/* =============
+    Index-Card2-Name
+============= */
 #leopard-name {
     background-color: $green;
     position: relative;
@@ -301,7 +304,7 @@
     h3 {
         color: rgba($color: $light-brown, $alpha: 0.75);
         left: 0px;
-        letter-spacing: 10px;
+        letter-spacing: 3px;
         position: absolute;
         top: -60px;
 
@@ -335,16 +338,16 @@
 
     div {
         display: grid;
-        grid-template-areas: "text exclamation";
+        grid-template-areas: "fact2 exclamation2";
         grid-template-columns: 90% auto;
 
         #exclamation-mark2 {
             color: rgba($color: $yellow, $alpha: 0.75);
-            grid-area: exclamation;
+            grid-area: exclamation2;
         }
 
         article {
-            grid-area: text;
+            grid-area: fact2;
 
             h2 {
                 color: $orange;
@@ -357,7 +360,7 @@
             }
 
             h2:first-child {
-                padding-top: 12%;
+                padding-top: 8%;
             }
 
             h2:last-child {
@@ -430,15 +433,18 @@
     }
 }
 
+/* =============
+    Index-Card3-Name
+============= */
 #hippo-name {
     background-color: $green;
     position: relative;
 
     h3 {
         color: rgba($color: $light-blue, $alpha: 0.75);
-        letter-spacing: 30px;
+        letter-spacing: 25px;
         position: absolute;
-        right: 0px;
+        left: 0px;
         top: -60px;
 
         @include md {
@@ -465,22 +471,18 @@
     background-color: $green;
     padding-top: 30px;
 
-    @include md {
-        padding-top: 0;
-    }
-
     div {
         display: grid;
-        grid-template-areas: "exclamation text";
+        grid-template-areas: "exclamation3 fact3";
         grid-template-columns: auto 90%;
 
         #exclamation-mark3 {
             color: rgba($color: $yellow, $alpha: 0.75);
-            grid-area: exclamation;
+            grid-area: exclamation3;
         }
 
         article {
-            grid-area: text;
+            grid-area: fact3;
 
             h2 {
                 color: $orange;
@@ -491,7 +493,7 @@
             }
 
             h2:first-child {
-                padding-top: 12%;
+                padding-top: 8%;
             }
 
             h2:last-child {

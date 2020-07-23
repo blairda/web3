@@ -597,10 +597,10 @@ header {
       cursor: pointer;
       transition: 0.25s; }
       header #burger-container #burger #bars {
-        fill: #D2AF36;
+        fill: #D2AF36 !important;
         transition: 0.25s; }
       header #burger-container #burger:hover #bars {
-        fill: #E18A37; }
+        fill: #E18A37 !important; }
 
 /* =============
     Footer

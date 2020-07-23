@@ -34,15 +34,15 @@ header {
         #burger {
             cursor: pointer;
             transition: 0.25s;
-            
+
             #bars {
-                fill: $yellow;
+                fill: $yellow !important;
                 transition: 0.25s;
             }
 
             &:hover {
                 #bars {
-                    fill: $orange;
+                    fill: $orange !important;
                 }
             }
         }

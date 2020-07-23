@@ -1,14 +1,28 @@
+var canYouSeeMenu = false;
 
 
-// function hideShowMainNav(){
-//     console.log("hide or show nav");
-//     $("main-nav").toggle();
-// }
 
-
-// function to handle the showing and hiding of the main-nav
+// function to handle showing/hiding of main-nav
 function hideShowMainNav(){
-    console.log("hide or show nav");
-    //toggles the css display property
-    $("#main-nav").toggle();
+    // console.log("hide or show nav");
+    // toggles css display property
+    // $("main-nav").toggle();
+
+    if(canYouSeeMenu === false){
+        console.log("show menu");
+        // reset back to true to hide menu
+        canYouSeeMenu = true;
+
+        // change burger into X
+        animateBurger();
+
+
+    }else{
+        console.log("hide menu");
+        // reset back to false to show menu again
+        canYouSeeMenu = false
+
+        // change X into burger
+        animateBurger();
+    }
 }

@@ -76,13 +76,16 @@
 
         @include md {
             grid-template-areas: "text-intro question";
-            grid-template-columns: 80% auto;
+            grid-template-columns: 90% auto;
         }
 
         #intro-text {
             grid-area: text-intro;
-            padding: 5% 0%;
-            padding-right: 2%;
+            padding: 5% 0;
+
+            @include md{
+                margin-right: 5%;
+            }
 
             h2 {
                 color: $orange;
@@ -96,10 +99,12 @@
             display: flex;
             grid-area: question;
             justify-content: center;
+            overflow: hidden;
 
             @include md {
-                display: grid;
-                place-items: center;
+                display: flex;
+                align-items: center;
+                justify-content: right;
             }
         }
     }
@@ -205,7 +210,8 @@
     div {
         display: grid;
         grid-template-areas: "exclamation1 fact1";
-        grid-template-columns: auto 80%;
+        grid-template-columns: auto 90%;
+        overflow: hidden;
 
         #exclamation-mark1 {
             color: rgba($color: $yellow, $alpha: 0.75);
@@ -340,7 +346,8 @@
     div {
         display: grid;
         grid-template-areas: "fact2 exclamation2";
-        grid-template-columns: 80% auto;
+        grid-template-columns: 90% auto;
+        overflow: hidden;
 
         #exclamation-mark2 {
             color: rgba($color: $yellow, $alpha: 0.75);
@@ -475,7 +482,8 @@
     div {
         display: grid;
         grid-template-areas: "exclamation3 fact3";
-        grid-template-columns: auto 80%;
+        grid-template-columns: auto 90%;
+        overflow: hidden;
 
         #exclamation-mark3 {
             color: rgba($color: $yellow, $alpha: 0.75);

@@ -35,13 +35,13 @@ header {
             cursor: pointer;
             transition: 0.25s;
 
-            #bars {
+            #bar-container {
                 fill: $yellow !important;
                 transition: 0.25s;
             }
 
             &:hover {
-                #bars {
+                #bar-container {
                     fill: $orange !important;
                 }
             }

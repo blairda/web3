@@ -531,9 +531,9 @@ textarea {
             font-size: 2.5rem;
             margin-right: 20px; } }
       #main-nav ul li button:hover, #main-nav ul li button:active, #main-nav ul li a:link:hover, #main-nav ul li a:link:active, #main-nav ul li a:visited:hover, #main-nav ul li a:visited:active {
-        color: #D2AF36; }
+        color: #D2AF36 !important; }
         #main-nav ul li button:hover i, #main-nav ul li button:active i, #main-nav ul li a:link:hover i, #main-nav ul li a:link:active i, #main-nav ul li a:visited:hover i, #main-nav ul li a:visited:active i {
-          color: #D2AF36; }
+          color: #D2AF36 !important; }
 
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
   color: #D2AF36; }
@@ -596,10 +596,10 @@ header {
     header #burger-container #burger {
       cursor: pointer;
       transition: 0.25s; }
-      header #burger-container #burger #bars {
+      header #burger-container #burger #bar-container {
         fill: #D2AF36 !important;
         transition: 0.25s; }
-      header #burger-container #burger:hover #bars {
+      header #burger-container #burger:hover #bar-container {
         fill: #E18A37 !important; }
 
 /* =============
@@ -733,11 +733,13 @@ footer {
     @media (min-width: 768px) {
       #index-intro > div {
         grid-template-areas: "text-intro question";
-        grid-template-columns: 80% auto; } }
+        grid-template-columns: 90% auto; } }
     #index-intro > div #intro-text {
       grid-area: text-intro;
-      padding: 5% 0%;
-      padding-right: 2%; }
+      padding: 5% 0; }
+      @media (min-width: 768px) {
+        #index-intro > div #intro-text {
+          margin-right: 5%; } }
       #index-intro > div #intro-text h2 {
         color: #E18A37;
         font-weight: 700; }
@@ -746,11 +748,13 @@ footer {
       color: rgba(210, 175, 54, 0.75);
       display: flex;
       grid-area: question;
-      justify-content: center; }
+      justify-content: center;
+      overflow: hidden; }
       @media (min-width: 768px) {
         #index-intro > div #question-mark {
-          display: grid;
-          place-items: center; } }
+          display: flex;
+          align-items: center;
+          justify-content: right; } }
 /* =============
     Index-Card1
 ============= */
@@ -826,7 +830,8 @@ footer {
   #index-fact1 div {
     display: grid;
     grid-template-areas: "exclamation1 fact1";
-    grid-template-columns: auto 80%; }
+    grid-template-columns: auto 90%;
+    overflow: hidden; }
     #index-fact1 div #exclamation-mark1 {
       color: rgba(210, 175, 54, 0.75);
       grid-area: exclamation1; }
@@ -919,7 +924,8 @@ footer {
   #index-fact2 div {
     display: grid;
     grid-template-areas: "fact2 exclamation2";
-    grid-template-columns: 80% auto; }
+    grid-template-columns: 90% auto;
+    overflow: hidden; }
     #index-fact2 div #exclamation-mark2 {
       color: rgba(210, 175, 54, 0.75);
       grid-area: exclamation2; }
@@ -1013,7 +1019,8 @@ footer {
   #index-fact3 div {
     display: grid;
     grid-template-areas: "exclamation3 fact3";
-    grid-template-columns: auto 80%; }
+    grid-template-columns: auto 90%;
+    overflow: hidden; }
     #index-fact3 div #exclamation-mark3 {
       color: rgba(210, 175, 54, 0.75);
       grid-area: exclamation3; }

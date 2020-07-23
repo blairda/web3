@@ -71,10 +71,10 @@
                 }
 
                 &:hover, &:active {
-                    color: $yellow;
+                    color: $yellow !important;
 
                     i {
-                        color: $yellow;
+                        color: $yellow !important;
                     }
                 }
             }

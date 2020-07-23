@@ -172,7 +172,7 @@
 
     h3 {
         color: rgba($color: $light-green, $alpha: 0.75);
-        letter-spacing: 30px;
+        letter-spacing: 25px;
         position: absolute;
         left: 0px;
         top: -60px;
@@ -204,7 +204,7 @@
     div {
         display: grid;
         grid-template-areas: "exclamation1 fact1";
-        grid-template-columns: auto 90%;
+        grid-template-columns: auto 80%;
 
         #exclamation-mark1 {
             color: rgba($color: $yellow, $alpha: 0.75);
@@ -442,7 +442,7 @@
 
     h3 {
         color: rgba($color: $light-blue, $alpha: 0.75);
-        letter-spacing: 25px;
+        letter-spacing: 20px;
         position: absolute;
         left: 0px;
         top: -60px;
@@ -474,7 +474,7 @@
     div {
         display: grid;
         grid-template-areas: "exclamation3 fact3";
-        grid-template-columns: auto 90%;
+        grid-template-columns: auto 80%;
 
         #exclamation-mark3 {
             color: rgba($color: $yellow, $alpha: 0.75);

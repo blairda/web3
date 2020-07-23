@@ -800,7 +800,7 @@ footer {
   position: relative; }
   #rhino-name h3 {
     color: rgba(239, 255, 223, 0.75);
-    letter-spacing: 30px;
+    letter-spacing: 25px;
     position: absolute;
     left: 0px;
     top: -60px; }
@@ -825,7 +825,7 @@ footer {
   #index-fact1 div {
     display: grid;
     grid-template-areas: "exclamation1 fact1";
-    grid-template-columns: auto 90%; }
+    grid-template-columns: auto 80%; }
     #index-fact1 div #exclamation-mark1 {
       color: rgba(210, 175, 54, 0.75);
       grid-area: exclamation1; }
@@ -987,7 +987,7 @@ footer {
   position: relative; }
   #hippo-name h3 {
     color: rgba(175, 187, 186, 0.75);
-    letter-spacing: 25px;
+    letter-spacing: 20px;
     position: absolute;
     left: 0px;
     top: -60px; }
@@ -1012,7 +1012,7 @@ footer {
   #index-fact3 div {
     display: grid;
     grid-template-areas: "exclamation3 fact3";
-    grid-template-columns: auto 90%; }
+    grid-template-columns: auto 80%; }
     #index-fact3 div #exclamation-mark3 {
       color: rgba(210, 175, 54, 0.75);
       grid-area: exclamation3; }

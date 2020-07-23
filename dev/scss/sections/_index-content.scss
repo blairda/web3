@@ -72,7 +72,7 @@
     >div {
         display: grid;
         grid-template-areas: "question text-intro";
-        grid-template-columns: auto 85%;
+        grid-template-columns: auto 75%;
 
         @include md {
             grid-template-areas: "text-intro question";

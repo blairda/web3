@@ -2,6 +2,7 @@
 var burgerAnimationTimeline = gsap.timeline({paused:true});
 var burgerAnimationSpeed = 0.33;
 
+
 // reset transformOrigin point for each bar
 gsap.set(".bars",{transformOrigin:"center"});
 

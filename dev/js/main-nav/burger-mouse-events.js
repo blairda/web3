@@ -54,7 +54,7 @@ $("#burger").on("mouseenter", function(){
         burgerToDownArrowTimeline.play();
     }else{
         // change X into burger, play another timeline
-        xToUpArrowTimeline.reverse();
+        xToUpArrowTimeline.play();
     }
     // if(canYouSeeMenu === true){
     //     // change burger into X
@@ -73,7 +73,7 @@ $("#burger").on("mouseleave", function(){
         burgerToDownArrowTimeline.reverse();
     }else{
         // change X into burger, play another timeline
-        xToUpArrowTimeline.play();
+        xToUpArrowTimeline.reverse();
     }
     // if(canYouSeeMenu === false){
     //     // change burger into X

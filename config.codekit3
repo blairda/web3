@@ -768,7 +768,7 @@
 "projectAttributes": {
 	"creationDate": 615877980.23471701,
 	"displayValue": "web3",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_orange",
 	"iconImageWasSetByUser": 1
 	},

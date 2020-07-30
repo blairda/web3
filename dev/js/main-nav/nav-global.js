@@ -46,11 +46,10 @@ function hideShowMainNav(){
 
 // enable menu to close when clicking ahywhere in menu area
 var menuBackground = document.querySelector("#main-nav");
-console.log("seen");
-window.onClick = function(event){
-    console.log("not seen1");
+
+window.onclick = function(event){
+    
     if(event.target == menuBackground){
-        console.log("not seen2");
         hideShowMainNav();
     }
 }

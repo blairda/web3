@@ -1,5 +1,6 @@
 // defining variables
 var burgerAnimationTimeline = gsap.timeline({paused:true});
+var upArrowToBurgerTimeline = gsap.timeline({paused:true});
 var burgerAnimationSpeed = 0.33;
 
 
@@ -21,6 +22,13 @@ burgerAnimationTimeline.to("#top-bar", {duration:burgerAnimationSpeed, rotation:
                         .to("#right-arrow", {duration:burgerAnimationSpeed, alpha:0, rotation:0}, "burgerToX")
 
 
+upArrowToBurgerTimeline.to("#top-bar", {y:0}, "backToBurger")
+                        .to("#bottom-bar", {y:0}, "backToBurger")
+                        .to("#middle-bar", {y:0, alpha:1}, "backToBurger")
+                        .to("#burger", {rotation:0}, "backToBurger")
+                        .to("#left-arrow", {alpha:0}, "backToBurger")
+                        .to("#right-arrow", {alpha:0}, "backToBurger");
+
 
 function animateBurger(){
     // console.log("animate burger");
@@ -31,7 +39,7 @@ function animateBurger(){
         burgerAnimationTimeline.play();
     }else{
         // change X into burger
-        burgerAnimationTimeline.reverse();
+        upArrowToBurgerTimeline.play();
     }
 
 }

@@ -13,7 +13,6 @@ gsap.set(".bars",{transformOrigin:"center"});
 //                         .to("#top-bar",{duration:burgerAnimationSpeed, rotation:45, y:11, fill: "#E18A37"}, "burgerStart")
 //                         .to("#bottom-bar",{duration:burgerAnimationSpeed, rotation:-45, y:-15, fill: "#E18A37", onReverseComplete:resetBurgerBarsColor}, "burgerStart");
 
-// burgerAnimationTimeline.to("#burger");
 
 burgerAnimationTimeline.to("#top-bar", {duration:burgerAnimationSpeed, rotation:45}, "burgerToX")
                         .to("#bottom-bar", {duration:burgerAnimationSpeed, rotation:-45}, "burgerToX")

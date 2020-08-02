@@ -43,4 +43,4 @@ $("#burger").on("mouseleave", function(){
         // change up arrow back into X
         xToUpArrowTimeline.reverse();
     }
-}) 
+})

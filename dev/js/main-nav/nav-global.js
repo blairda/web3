@@ -23,11 +23,16 @@ function hideShowMainNav(){
         console.log("show menu");
         // reset back to true to hide menu
         canYouSeeMenu = true;
+            // console.log(burgerToDownArrowTimeline.progress() + " is the progress for the gsap timeline, anything greater than 0 means it has played");
+            if(burgerToDownArrowTimeline.progress() > 0){
+                // change burger into X
+                animateBurger();
+            }else{
+                mobileBurgerAnimation();
+            }
 
-        // change burger into X
-        animateBurger();
-        // slide down main-nav into view
-        mainNavTimeline.play();
+            // slide down main-nav into view
+            mainNavTimeline.play();
 
 
     }else{

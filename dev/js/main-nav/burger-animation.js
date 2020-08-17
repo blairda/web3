@@ -1,49 +1,40 @@
-// defining variables
-var burgerAnimationTimeline = gsap.timeline({paused:true});
-var upArrowToBurgerTimeline = gsap.timeline({paused:true});
-var burgerAnimationSpeed = 0.33;
 
+var burgerAnimateSpeed = 0.25;
 
-// reset transformOrigin point for each bar
-gsap.set(".bars",{transformOrigin:"center"});
+var burgerAnimationTimeLine = gsap.timeline({
+    paused: true
+});
 
-// reference to timeline variable above, animated object, animate property/ies *only 1 objectid/class per action, color is orange
-// Ex: variablename.action("#objectid",{property,property}); optional add after },"timelinestampname")
-// burgerAnimationTimeline.to("#middle-bar",{duration:burgerAnimationSpeed, alpha:0, fill: "#E18A37"}, "burgerStart")
-//                         .to("#top-bar",{duration:burgerAnimationSpeed, rotation:45, y:11, fill: "#E18A37"}, "burgerStart")
-//                         .to("#bottom-bar",{duration:burgerAnimationSpeed, rotation:-45, y:-15, fill: "#E18A37", onReverseComplete:resetBurgerBarsColor}, "burgerStart");
-
-
-burgerAnimationTimeline.to("#top-bar", {duration:burgerAnimationSpeed, rotation:45}, "burgerToX")
-                        .to("#bottom-bar", {duration:burgerAnimationSpeed, rotation:-45}, "burgerToX")
-                        .to("#middle-bar", {duration:burgerAnimationSpeed, alpha:0}, "burgerToX")
-                        .to("#left-arrow", {duration:burgerAnimationSpeed, alpha:0, rotation:0}, "burgerToX")
-                        .to("#right-arrow", {duration:burgerAnimationSpeed, alpha:0, rotation:0}, "burgerToX")
-
-
-upArrowToBurgerTimeline.to("#top-bar", {y:0}, "backToBurger")
-                        .to("#bottom-bar", {y:0}, "backToBurger")
-                        .to("#middle-bar", {y:0, alpha:1}, "backToBurger")
-                        .to("#burger", {rotation:0}, "backToBurger")
-                        .to("#left-arrow", {alpha:0}, "backToBurger")
-                        .to("#right-arrow", {alpha:0}, "backToBurger");
-
-
-function animateBurger(){
-    // console.log("animate burger");
-
-    // check the canYouSeeMenu variable value
-    if(canYouSeeMenu === true){
-        // change burger into X
-        burgerAnimationTimeline.play();
-    }else{
-        // change X into burger
-        upArrowToBurgerTimeline.play();
-    }
-
-}
-
-// function to revert back to original yellow color when reversing from X to burger, color is yellow
-// function resetBurgerBarsColor(){
-//     gsap.to(".bars",{duration:burgerAnimationSpeed, fill: "#D2AF36"});
-// }
+burgerAnimationTimeLine.addLabel("burgerToDownArrow")
+                        .to("#burger",{duration:burgerAnimateSpeed, rotation:-90}, "animateBurger")
+                        .to("#bottom-line",{duration:burgerAnimateSpeed, y:-10}, "animateBurger")
+                        .to("#top-line",{duration:burgerAnimateSpeed, y:10}, "animateBurger")
+                        .to("#down-left-arrow",{duration:burgerAnimateSpeed, rotation:60}, "createArrow")
+                        .to("#down-right-arrow",{duration:burgerAnimateSpeed, rotation:-60}, "createArrow")
+                        .addLabel("burgerToDownArrowReverse")
+                        .addPause()
+                        .addLabel("downArrowToX")
+                        .to("#top-line",{duration: burgerAnimateSpeed, rotation:45},"burgerToX")
+                        .to("#bottom-line",{duration: burgerAnimateSpeed, rotation:-45},"burgerToX")
+                        .to("#middle-line",{duration: burgerAnimateSpeed, alpha:0},"burgerToX")
+                        .to("#down-left-arrow",{duration: burgerAnimateSpeed, rotation:0, alpha:0},"burgerToX")
+                        .to("#down-right-arrow",{duration: burgerAnimateSpeed, rotation:0, alpha:0},"burgerToX")
+                        .to("#up-left-arrow",{duration: burgerAnimateSpeed, alpha:0},"burgerToX")
+                        .to("#up-right-arrow",{duration: burgerAnimateSpeed, alpha:0},"burgerToX")
+                        .addLabel("downArrowToXReverse")
+                        .addPause()
+                        .addLabel("xToUpArrow")
+                        .to("#bottom-line",{duration:burgerAnimateSpeed, rotation: 0}, 'upArrow')
+                        .to("#top-line",{duration:burgerAnimateSpeed, rotation: 0}, 'upArrow')
+                        .to("#up-left-arrow",{duration:burgerAnimateSpeed,rotation:60, alpha:1}, 'createUpArrow')
+                        .to("#up-right-arrow",{duration:burgerAnimateSpeed,rotation:-60, alpha:1}, 'createUpArrow')
+                        .addLabel("xToUpArrowReverse")
+                        .addPause()
+                        .addLabel("upArrowToBurger")
+                        .to("#up-left-arrow",{duration:burgerAnimateSpeed,rotation:0, alpha:0}, 'backToBurger')
+                        .to("#up-right-arrow",{duration:burgerAnimateSpeed,rotation:0, alpha:0}, 'backToBurger')
+                        .to("#middle-line",{duration:burgerAnimateSpeed, alpha:1}, 'backToBurger')
+                        .to("#top-line",{duration:burgerAnimateSpeed, y:0, rotation:0}, 'backToBurger')
+                        .to("#bottom-line",{duration:burgerAnimateSpeed, y:0, rotation:0}, 'backToBurger')
+                        .to("#burger",{duration:burgerAnimateSpeed, rotation:0}, 'backToBurger')
+                        .addPause();

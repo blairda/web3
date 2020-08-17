@@ -1,8 +1,7 @@
-// console.log("tinySlider here");
 
 $(document).ready(function () {
 
-    console.log($(".slides").hasClass("my-slider"));
+    // console.log($(".slides").hasClass("my-slider"));
     if ($(".slides").hasClass("my-slider")) {
         tns({
             container: '.my-slider',

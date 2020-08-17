@@ -367,6 +367,11 @@ a:visited {
   @media (min-width: 768px) {
     .content-spacing {
       margin-bottom: 60px; } }
+.top-margin {
+  padding-top: 10%; }
+  @media (min-width: 1025px) {
+    .top-margin {
+      padding-top: 5%; } }
 /* =============
     Typography
 ============= */

@@ -474,7 +474,8 @@ p, h1, h2, h3, h4, h5, h6 {
       font-size: 2rem;
       min-width: 100px; } }
 button {
-  transition: 0.25s; }
+  transition: 0.25s;
+  cursor: pointer; }
 
 /* =============
     Forms

@@ -1,4 +1,3 @@
-gsap.registerPlugin(ScrollToPlugin);
 
 // animating three buttons to scrollto respective index sections
 var scrollItems =["#index-card1", "#index-card2", "#index-card3"];

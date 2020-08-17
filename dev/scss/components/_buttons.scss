@@ -1,27 +1,37 @@
 /* =============
     Buttons
 ============= */
-.join-button{
+.join-button {
     background-color: $orange;
-    border: solid 2px $yellow;
-    padding: 2% 5%;
-    min-width: 60px;
-    font-family: 'Changa', sans-serif;
+    border: solid 3px $yellow;
     color: $green;
+    font-family: 'Changa', sans-serif;
     font-size: rem-calc(20);
+    min-width: 60px;
+    padding: 2% 5%;
 
-    @include md{
+    @include md {
         font-size: rem-calc(24);
         min-width: 80px;
     }
 
-    @include lg{
+    @include lg {
         font-size: rem-calc(32);
         min-width: 100px;
     }
+
+    &:hover {
+        background-color: $yellow;
+        border: solid 3px $orange;
+    }
+
+    &:active {
+        background-color: $yellow;
+        border: solid 3px $orange;
+    }
 }
 
-button{
-    transition: 0.25s;
+button {
     cursor: pointer;
- }
+    transition: 0.25s;
+}

@@ -459,12 +459,12 @@ p, h1, h2, h3, h4, h5, h6 {
 ============= */
 .join-button {
   background-color: #E18A37;
-  border: solid 2px #D2AF36;
-  padding: 2% 5%;
-  min-width: 60px;
-  font-family: 'Changa', sans-serif;
+  border: solid 3px #D2AF36;
   color: #141A02;
-  font-size: 1.25rem; }
+  font-family: 'Changa', sans-serif;
+  font-size: 1.25rem;
+  min-width: 60px;
+  padding: 2% 5%; }
   @media (min-width: 768px) {
     .join-button {
       font-size: 1.5rem;
@@ -473,9 +473,16 @@ p, h1, h2, h3, h4, h5, h6 {
     .join-button {
       font-size: 2rem;
       min-width: 100px; } }
+  .join-button:hover {
+    background-color: #D2AF36;
+    border: solid 3px #E18A37; }
+  .join-button:active {
+    background-color: #D2AF36;
+    border: solid 3px #E18A37; }
+
 button {
-  transition: 0.25s;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 0.25s; }
 
 /* =============
     Forms
